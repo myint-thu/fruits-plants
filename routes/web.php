@@ -17,3 +17,6 @@ Route::get('/', function () {
     //return view('welcome');
     return "Hello Laravel Project is coming";
 });
+Route::get('/testing', function ($value=''){
+	return "That is our project testing";
+});
