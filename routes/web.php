@@ -19,3 +19,6 @@ Route::get('/', function () {
 
     //of course
 });
+Route::get('/testing', function ($value=''){
+	return "That is our project testing";
+});
