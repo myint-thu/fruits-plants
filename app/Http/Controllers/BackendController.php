@@ -8,7 +8,7 @@ class BackendController extends Controller
 {
 	 public function dashboardfun($value='')
     {
-        return view('dashboard');
+        return view('backend');
     }
     //
 }
