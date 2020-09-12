@@ -12,10 +12,10 @@
     <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="frontend/img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="frontend/style.css">
 
 </head>
 
@@ -24,11 +24,11 @@
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-circle"></div>
         <div class="preloader-img">
-            <img src="img/core-img/leaf.png" alt="">
+            <img src="frontend/img/core-img/leaf.png" alt="">
         </div>
     </div>
 
-    <!-- ##### Header Area Start ##### -->
+   <!-- ##### Header Area Start ##### -->
     <header class="header-area">
 
         <!-- ***** Top Header Area ***** -->
@@ -100,38 +100,38 @@
                             <!-- Navbar Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="{{route('masterpage')}}">Home</a></li>
+                                    <li><a href="{{route('aboutpage')}}">About</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="shop.html">Shop</a>
+                                            <li><a href="{{route('masterpage')}}">Home</a></li>
+                                            <li><a href="{{route('aboutpage')}}">About</a></li>
+                                            <li><a href="{{route('shoppage')}}">Shop</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
                                                     <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
+                                                    <li><a href="{{route('checkoutpage')}}">Checkout</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="portfolio.html">Portfolio</a>
+                                            <li><a href="{{route('portfoliopage')}}">Portfolio</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
                                                     <li><a href="single-portfolio.html">Portfolio Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="blog.html">Blog</a>
+                                            <li><a href="{{route('blogpage')}}">Blog</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-post.html">Blog Details</a></li>
+                                                    <li><a href="{{route('blogpage')}}">Blog</a></li>
+                                                    <li><a href="{{route('blogpage')}}">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
+                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
+                                    <li><a href="{{route('contactpage')}}">Contact</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->
@@ -162,7 +162,7 @@
     <!-- ##### Breadcrumb Area Start ##### -->
     <div class="breadcrumb-area">
         <!-- Top Breadcrumb Area -->
-        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/24.jpg);">
+        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(frontend/img/bg-img/24.jpg);">
             <h2>ABOUT US</h2>
         </div>
 
@@ -457,7 +457,7 @@
     <!-- ##### Testimonial Area End ##### -->
 
     <!-- ##### Cool Facts Area Start ##### -->
-    <section class="cool-facts-area bg-img section-padding-100-0" style="background-image: url(img/bg-img/cool-facts.png);">
+    <section class="cool-facts-area bg-img section-padding-100-0" style="background-image: url(frontend/img/bg-img/cool-facts.png);">
         <div class="container">
             <div class="row">
 
@@ -632,7 +632,7 @@
     <!-- ##### Team Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area bg-img" style="background-image: url(img/bg-img/3.jpg);">
+    <footer class="footer-area bg-img" style="background-image: url(frontend/img/bg-img/3.jpg);">
         <!-- Main Footer Area -->
         <div class="main-footer-area">
             <div class="container">
@@ -768,15 +768,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="frontedend/js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="frontend/js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
-    <script src="frontedend/js/bootstrap/popper.min.js"></script>
+    <script src="frontend/js/bootstrap/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="frontedend/js/bootstrap/bootstrap.min.js"></script>
+    <script src="frontend/js/bootstrap/bootstrap.min.js"></script>
     <!-- All Plugins js -->
-    <script src="frontedend/js/plugins/plugins.js"></script>
+    <script src="frontend/js/plugins/plugins.js"></script>
     <!-- Active js -->
-    <script src="frontedend/js/active.js"></script>
+    <script src="frontend/js/active.js"></script>
 </body>
 
 </html>
