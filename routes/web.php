@@ -20,12 +20,19 @@ Route::get('/', function () {
 
 //soethuwin
 
+Route::get('master','PageController@masterfun')->name('masterpage');
 
 Route::get('about','PageController@aboutfun')->name('aboutpage');
 Route::get('shop','PageController@shopfun')->name('shoppage');
 Route::get('portfilio','PageController@portfoliofun')->name('portfoliopage');
 Route::get('contact','PageController@contactfun')->name('contactpage');
 Route::get('cart','PageController@cartfun')->name('cartpage');
+Route::get('checkout','PageController@checkoutfun')->name('checkoutpage');
+Route::get('checkout','PageController@checkoutfun')->name('checkoutpage');
+Route::get('portfoliodetail','PageController@portfoliodetailfun')->name('portfoliodetailpage');
+Route::get('blog','PageController@blogfun')->name('blogpage');
+Route::get('single','PageController@singlefun')->name('singlepage');
+
 
 
 

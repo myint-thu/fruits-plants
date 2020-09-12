@@ -26,5 +26,30 @@ class PageController extends Controller
     {
         return view('frontend.cart');
     }
+ public function masterfun($value='')
+    {
+        return view('frontend.master');
+    }
+    public function checkoutfun($value='')
+    {
+        return view('frontend.checkout');
+    }
+     public function portfoliodetailfun($value='')
+    {
+        return view('frontend.portfoliodetail');
+    }
+ public function blogfun($value='')
+    {
+        return view('frontend.blog');
+    }
+    public function singlefun($value='')
+    {
+        return view('frontend.single');
+    }
+
+
+
+
+   //s masterfunportfoliodetailfun
     //
 }

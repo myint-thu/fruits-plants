@@ -100,30 +100,30 @@
                             <!-- Navbar Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="{{route('masterpage')}}">Home</a></li>
                                     <li><a href="{{route('aboutpage')}}">About</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="shop.html">Shop</a>
+                                            <li><a href="{{route('masterpage')}}">Home</a></li>
+                                            <li><a href="{{route('aboutpage')}}">About</a></li>
+                                            <li><a href="{{route('shoppage')}}">Shop</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
                                                     <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
+                                                    <li><a href="{{route('checkoutpage')}}">Checkout</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="portfolio.html">Portfolio</a>
+                                            <li><a href="{{route('portfoliopage')}}">Portfolio</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
                                                     <li><a href="single-portfolio.html">Portfolio Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="blog.html">Blog</a>
+                                            <li><a href="{{route('blogpage')}}">Blog</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-post.html">Blog Details</a></li>
+                                                    <li><a href="{{route('blogpage')}}">Blog</a></li>
+                                                    <li><a href="{{route('blogpage')}}">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
