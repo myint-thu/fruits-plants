@@ -15,12 +15,12 @@ class CreateItemsTable extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('category_id');
             $table->string('name');
             $table->text('photo');
             $table->integer('price');
             $table->text('description');
-            $table->text('techonology');
+            $table->text('technology');
+            $table->unsignedBigInteger('category_id');
             $table->timestamps();
             $table->foreign('category_id')
                     ->references('id')

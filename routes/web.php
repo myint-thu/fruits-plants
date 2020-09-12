@@ -17,8 +17,10 @@ Route::get('/', function () {
     return view('frontend.master');
     
 });
-
+Route::resource('categories','CategoryController');
+Route::resource('items','ItemController');
 Route::get('dashboard','BackendController@dashboardfun')->name('dashboardpage');
+
 
 Route::get('/testing', function ($value=''){
 	return "That is our project testing";

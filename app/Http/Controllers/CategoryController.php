@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Category;
 use Illuminate\Http\Request;
+
 
 class CategoryController extends Controller
 {
@@ -13,7 +14,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::all();
+        // dd($items);
+
+        return view('backend.categories.index',compact('categories'));
     }
 
     /**
@@ -23,7 +27,10 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::all();
+          // $subcategories = Subcategory::all();
+
+        return view('backend.categories.create',compact('categories'));
     }
 
     /**
@@ -34,7 +41,20 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            // "codeno" => 'required|min:4',
+            "name" => 'required',
+            ]);
+        $category = new Category;
+        
+        $category->name = $request->name;
+            
+            
+        $category->save();
+
+
+        // redirect
+            return redirect()->route('categories.index');
     }
 
     /**
@@ -56,7 +76,9 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $categories = Category::all();
+    
+        return view('backend.categories.edit',compact('categories'));
     }
 
     /**
@@ -68,7 +90,18 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+        
+            "name" => 'required',
+            
+            
+        ]);
+        $category->name = $request->name;
+            
+            
+            $category->save();
+        //redirect
+            return redirect()->route('categories.index');
     }
 
     /**
