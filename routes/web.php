@@ -18,6 +18,18 @@ Route::get('/', function () {
     
 });
 
+//soethuwin
+
+
+Route::get('about','PageController@aboutfun')->name('aboutpage');
+Route::get('shop','PageController@shopfun')->name('shoppage');
+Route::get('portfilio','PageController@portfoliofun')->name('portfoliopage');
+Route::get('contact','PageController@contactfun')->name('contactpage');
+Route::get('cart','PageController@cartfun')->name('cartpage');
+
+
+
+
 Route::get('dashboard','BackendController@dashboardfun')->name('dashboardpage');
 
 Route::get('/testing', function ($value=''){

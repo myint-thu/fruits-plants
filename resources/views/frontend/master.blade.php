@@ -65,7 +65,7 @@
                                 </div>
                                 <!-- Cart -->
                                 <div class="cart">
-                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="{{route('aboutpage')}}">About</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
                                             <li><a href="index.html">Home</a></li>
@@ -129,9 +129,9 @@
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{route('aboutpage')}}">Shop</a></li>
+                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
+                                    <li><a href="{{route('contactpage')}}">Contact</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->
