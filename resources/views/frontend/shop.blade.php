@@ -15,7 +15,7 @@
     <link rel="icon" href="frontend/img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="frontend/style.css">
 
 </head>
 
@@ -24,7 +24,7 @@
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-circle"></div>
         <div class="preloader-img">
-            <img src="frontendimg/core-img/leaf.png" alt="">
+            <img src="frontend/img/core-img/leaf.png" alt="">
         </div>
     </div>
 
@@ -162,7 +162,7 @@
     <!-- ##### Breadcrumb Area Start ##### -->
     <div class="breadcrumb-area">
         <!-- Top Breadcrumb Area -->
-        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/24.jpg);">
+        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(frontend/img/bg-img/24.jpg);">
             <h2>Shop</h2>
         </div>
 
@@ -594,7 +594,7 @@
     <!-- ##### Shop Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area bg-img" style="background-image: url(img/bg-img/3.jpg);">
+    <footer class="footer-area bg-img" style="background-image: url(frontend/img/bg-img/3.jpg);">
         <!-- Main Footer Area -->
         <div class="main-footer-area">
             <div class="container">
@@ -738,7 +738,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- All Plugins js -->
     <script src="frontendjs/plugins/plugins.js"></script>
     <!-- Active js -->
-    <script src="frontendjs/active.js"></script>
+    <script src="frontend/js/active.js"></script>
 </body>
 
 </html>
