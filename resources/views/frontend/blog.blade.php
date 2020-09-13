@@ -15,7 +15,7 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{asset('frontend/style.css')}}">
 
 </head>
 
@@ -24,7 +24,7 @@
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-circle"></div>
         <div class="preloader-img">
-            <img src="img/core-img/leaf.png" alt="">
+            <img src="{{asset('frontend/img/core-img/leaf.png')}}" alt="">
         </div>
     </div>
 
@@ -100,38 +100,38 @@
                             <!-- Navbar Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="{{route('masterpage')}}">Home</a></li>
+                                    <li><a href="{{route('aboutpage')}}">About</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="{{route('masterpage')}}">Home</a></li>
+                                            <li><a href="{{route('aboutpage')}}">About</a></li>
                                             <li><a href="shop.html">Shop</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="shop.html">Shop</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
+                                                    <li><a href="{{route('shoppage')}}">Shop Details</a></li>
+                                                    <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
+                                                    <li><a href="{{route('checkoutpage')}}">Checkout</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="portfolio.html">Portfolio</a>
+                                            <li><a href="{{route('portfoliopage')}}">Portfolio</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                                    <li><a href="single-portfolio.html">Portfolio Details</a></li>
+                                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
+                                                    <li><a href="portfolio">Portfolio Details</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="blog.html">Blog</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-post.html">Blog Details</a></li>
+                                                    <li><a href="{{route('blogpage')}}">Blog</a></li>
+                                                    <li><a href="{{route('blogpage')}}">Blog Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="{{route('contactpage')}}">Contact</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
+                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
+                                    <li><a href="{{route('contactpage')}}">Contact</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->
@@ -162,7 +162,7 @@
     <!-- ##### Breadcrumb Area Start ##### -->
     <div class="breadcrumb-area">
         <!-- Top Breadcrumb Area -->
-        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/24.jpg);">
+        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({{asset('img/bg-img/24.jpg')}});">
             <h2>BLOG DEFAULT</h2>
         </div>
 
@@ -477,7 +477,7 @@
     <!-- ##### Blog Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area bg-img" style="background-image: url(img/bg-img/3.jpg);">
+    <footer class="footer-area bg-img" style="background-image: url({{asset('frontend/img/bg-img/3.jpg')}});">
         <!-- Main Footer Area -->
         <div class="main-footer-area">
             <div class="container">
@@ -487,7 +487,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                                <a href="#"><img src="{{asset('frontend/img/core-img/logo.png')}}" alt=""></a>
                             </div>
                             <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
                             <div class="social-info">
@@ -595,12 +595,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         <div class="footer-nav">
                             <nav>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
+                                    <li><a href="{{route('masterpage')}}">Home</a></li>
+                                    <li><a href="{{route('aboutpage')}}">About</a></li>
                                     <li><a href="#">Service</a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
+                                    <li><a href="{{route('blogpage')}}">Blog</a></li>
+                                    <li><a href="{{route('contactpage')}}">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -613,15 +613,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="frontedend/js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="{{asset('frontend/js/jquery/jquery-2.2.4.min.js')}}"></script>
     <!-- Popper js -->
-    <script src="frontedend/js/bootstrap/popper.min.js"></script>
+    <script src="{{asset('frontend/js/bootstrap/popper.min.js')}}"></script>
     <!-- Bootstrap js -->
-    <script src="frontedend/js/bootstrap/bootstrap.min.js"></script>
+    <script src="{{asset('frontend/js/bootstrap/bootstrap.min.js')}}"></script>
     <!-- All Plugins js -->
-    <script src="frontedend/js/plugins/plugins.js"></script>
+    <script src="{{asset('frontend/js/plugins/plugins.js')}}"></script>
     <!-- Active js -->
-    <script src="frontedend/js/active.js"></script>
+    <script src="{{asset('frontend/js/active.js')}}"></script>
 </body>
 
 </html>

@@ -194,7 +194,7 @@
                             <!-- Post Content -->
                             <div class="hero-slides-content text-center">
                                 <h2>Plants exist in the weather and light rays that surround them</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p>
+                                <p></p>
                                 <div class="welcome-btn-group">
                                     <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
                                     <a href="#" class="btn alazea-btn active">CONTACT US</a>

@@ -12,7 +12,7 @@
     <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="{{asset('frontend/img/core-img/favicon.ico')}}">
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="{{asset('frontend/style.css')}}">
@@ -24,7 +24,7 @@
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-circle"></div>
         <div class="preloader-img">
-            <img src="{{asset('img/core-img/leaf.png')}}" alt="">
+            <img src="{{asset('frontend/img/core-img/leaf.png')}}" alt="">
         </div>
     </div>
 
@@ -82,7 +82,7 @@
                     <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                         <!-- Nav Brand -->
-                        <a href="index.html" class="nav-brand"><img src="{{asset('img/core-img/logo.png" alt=""')}}"></a>
+                        <a href="index.html" class="nav-brand"><img src="{{asset('frontend/img/core-img/logo.png" alt=""')}}"></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -162,7 +162,7 @@
     <!-- ##### Breadcrumb Area Start ##### -->
     <div class="breadcrumb-area">
         <!-- Top Breadcrumb Area -->
-        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/24.jpg);">
+        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({{asset('frontend/img/bg-img/24.jpg')}});">
             <h2>Contact US</h2>
         </div>
 
@@ -266,7 +266,7 @@
     <!-- ##### Contact Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area bg-img" style="background-image: url(img/bg-img/3.jpg);">
+    <footer class="footer-area bg-img" style="background-image: url({{asset('frontend/img/bg-img/3.jpg')}});">
         <!-- Main Footer Area -->
         <div class="main-footer-area">
             <div class="container">
@@ -276,7 +276,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                                <a href="#"><img src="{{asset('frontend/img/core-img/logo.png')}}" alt=""></a>
                             </div>
                             <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
                             <div class="social-info">
@@ -402,15 +402,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="{{asset('frontedend/js/jquery/jquery-2.2.4.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery/jquery-2.2.4.min.js')}}"></script>
     <!-- Popper js -->
-    <script src="{{asset('frontedend/js/bootstrap/popper.min.js')}}"></script>
+    <script src="{{asset('frontend/js/bootstrap/popper.min.js')}}"></script>
     <!-- Bootstrap js -->
-    <script src="{{asset('frontedend/js/bootstrap/bootstrap.min.js')}}"></script>
+    <script src="{{asset('frontend/js/bootstrap/bootstrap.min.js')}}"></script>
     <!-- All Plugins js -->
-    <script src="{{asset('frontedend/js/plugins/plugins.js')}}"></script>
+    <script src="{{asset('frontend/js/plugins/plugins.js')}}"></script>
     <!-- Active js -->
-    <script src="{{asset('frontedend/js/active.js')}}"></script>
+    <script src="{{asset('frontend/js/active.js')}}"></script>
 </body>
 
 </html>
