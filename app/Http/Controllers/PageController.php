@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Item;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -12,7 +12,8 @@ class PageController extends Controller
     }
     public function shopfun($value='')
     {
-        return view('frontend.shop');
+        $items = Item::all();
+        return view('frontend.shop',compact('items'));
     }
     public function portfoliofun($value='')
     {

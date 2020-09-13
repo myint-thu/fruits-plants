@@ -1050,6 +1050,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="{{asset('frontend/js/plugins/plugins.js')}}"></script>
     <!-- Active js -->
     <script src="{{asset('frontend/js/active.js')}}"></script>
+    <script type="text/javascript" src="{{asset('fruitplant.js')}}"></script>
 </body>
 
 </html>

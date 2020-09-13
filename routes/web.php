@@ -30,6 +30,9 @@ Route::get('shop','PageController@shopfun')->name('shoppage');
 Route::get('portfilio','PageController@portfoliofun')->name('portfoliopage');
 Route::get('contact','PageController@contactfun')->name('contactpage');
 Route::get('cart','PageController@cartfun')->name('cartpage');
+// testing
+		Route::get('shop','PageController@shopfun')->name('shoppage');
+// end testing
 Route::get('checkout','PageController@checkoutfun')->name('checkoutpage');
 Route::get('checkout','PageController@checkoutfun')->name('checkoutpage');
 Route::get('portfoliodetail','PageController@portfoliodetailfun')->name('portfoliodetailpage');
