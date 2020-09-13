@@ -17,15 +17,14 @@ Route::get('/', function () {
     return view('frontend.master');
     
 });
-<<<<<<< HEAD
 Route::resource('categories','CategoryController');
 Route::resource('items','ItemController');
-=======
+Route::get('dashboard','BackendController@dashboardfun')->name('dashboardpage');
+
 
 //soethuwin
 
 Route::get('master','PageController@masterfun')->name('masterpage');
-
 Route::get('about','PageController@aboutfun')->name('aboutpage');
 Route::get('shop','PageController@shopfun')->name('shoppage');
 Route::get('portfilio','PageController@portfoliofun')->name('portfoliopage');
@@ -39,10 +38,6 @@ Route::get('single','PageController@singlefun')->name('singlepage');
 
 
 
-
-
->>>>>>> efdb83e657a40eac626457bdc2564f977ddf9f03
-Route::get('dashboard','BackendController@dashboardfun')->name('dashboardpage');
 
 
 Route::get('/testing', function ($value=''){
