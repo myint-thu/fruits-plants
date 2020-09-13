@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('frontend.master');
     
 });
+<<<<<<< HEAD
+Route::resource('categories','CategoryController');
+Route::resource('items','ItemController');
+=======
 
 //soethuwin
 
@@ -37,7 +41,9 @@ Route::get('single','PageController@singlefun')->name('singlepage');
 
 
 
+>>>>>>> efdb83e657a40eac626457bdc2564f977ddf9f03
 Route::get('dashboard','BackendController@dashboardfun')->name('dashboardpage');
+
 
 Route::get('/testing', function ($value=''){
 	return "That is our project testing";
