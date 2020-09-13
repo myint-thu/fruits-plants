@@ -12,10 +12,10 @@
     <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="{{asset('frontend/img/core-img/favicon.ico')}}">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{asset('frontend/style.css')}}">
 
 </head>
 
@@ -162,7 +162,7 @@
     <!-- ##### Breadcrumb Area Start ##### -->
     <div class="breadcrumb-area">
         <!-- Top Breadcrumb Area -->
-        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/24.jpg);">
+        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({{asset('frontend/img/bg-img/24.jpg')}});">
             <h2>Checkout</h2>
         </div>
 
@@ -297,7 +297,7 @@
     <!-- ##### Checkout Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area bg-img" style="background-image: url(img/bg-img/3.jpg);">
+    <footer class="footer-area bg-img" style="background-image: url({{asset('frontend/img/bg-img/3.jpg')}});">
         <!-- Main Footer Area -->
         <div class="main-footer-area">
             <div class="container">
@@ -433,15 +433,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="frontedend/js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="{{asset('frontend/js/jquery/jquery-2.2.4.min.js')}}"></script>
     <!-- Popper js -->
-    <script src="frontedend/js/bootstrap/popper.min.js"></script>
+    <script src="{{asset('frontend/js/bootstrap/popper.min.js')}}"></script>
     <!-- Bootstrap js -->
-    <script src="frontedend/js/bootstrap/bootstrap.min.js"></script>
+    <script src="{{asset('frontend/js/bootstrap/bootstrap.min.js')}}"></script>
     <!-- All Plugins js -->
-    <script src="frontedend/js/plugins/plugins.js"></script>
+    <script src="{{asset('frontend/js/plugins/plugins.js')}}"></script>
     <!-- Active js -->
-    <script src="frontedend/js/active.js"></script>
+    <script src="{{asset('frontend/js/active.js')}}"></script>
 </body>
 
 </html>

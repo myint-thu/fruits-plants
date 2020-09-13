@@ -12,10 +12,10 @@
     <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="frontend/img/core-img/favicon.ico">
+    <link rel="icon" href="{{asset('frontend/img/core-img/favicon.ico')}}">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="frontend/style.css">
+    <link rel="stylesheet" href="{{asset('frontend/style.css')}}">
 
 </head>
 
@@ -82,7 +82,7 @@
                     <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                         <!-- Nav Brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="frontend/{{asset('img/core-img/logo.png')}}" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -100,38 +100,38 @@
                             <!-- Navbar Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="{{route('masterpage')}}">Home</a></li>
+                                    <li><a href="{{route('aboutpage')}}">About</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="{{route('masterpage')}}">Home</a></li>
+                                            <li><a href="{{route('aboutpage')}}">About</a></li>
                                             <li><a href="shop.html">Shop</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
                                                     <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
+                                                    <li><a href="{{route('checkoutpage')}}">Checkout</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="portfolio.html">Portfolio</a>
+                                            <li><a href="{{route('portfoliopage')}}">Portfolio</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                                    <li><a href="single-portfolio.html">Portfolio Details</a></li>
+                                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
+                                                    <li><a href="{{route('portfoliopage')}}">Portfolio Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="blog.html">Blog</a>
+                                            <li><a href="{{route('blogpage')}}">Blog</a>
                                                 <ul class="dropdown">
                                                     <li><a href="blog.html">Blog</a></li>
                                                     <li><a href="single-post.html">Blog Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="{{route('contactpage')}}">Contact</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
+                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
+                                    <li><a href="{{route('contactpage')}}">Contact</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->
@@ -162,7 +162,7 @@
     <!-- ##### Breadcrumb Area Start ##### -->
     <div class="breadcrumb-area">
         <!-- Top Breadcrumb Area -->
-        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(frontend/img/bg-img/24.jpg);">
+        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({{asset('frontend/img/bg-img/24.jpg')}});">
             <h2>Shop</h2>
         </div>
 
@@ -310,7 +310,7 @@
                                 <!-- Single Best Seller Products -->
                                 <div class="single-best-seller-product d-flex align-items-center">
                                     <div class="product-thumbnail">
-                                        <a href="shop-details.html"><img src="img/bg-img/4.jpg" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/4.jpg')}}" alt=""></a>
                                     </div>
                                     <div class="product-info">
                                         <a href="shop-details.html">Cactus Flower</a>
@@ -328,7 +328,7 @@
                                 <!-- Single Best Seller Products -->
                                 <div class="single-best-seller-product d-flex align-items-center">
                                     <div class="product-thumbnail">
-                                        <a href="shop-details.html"><img src="img/bg-img/5.jpg" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/5.jpg')}}" alt=""></a>
                                     </div>
                                     <div class="product-info">
                                         <a href="shop-details.html">Tulip Flower</a>
@@ -346,7 +346,7 @@
                                 <!-- Single Best Seller Products -->
                                 <div class="single-best-seller-product d-flex align-items-center">
                                     <div class="product-thumbnail">
-                                        <a href="shop-details.html"><img src="img/bg-img/34.jpg" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/34.jpg')}}" alt=""></a>
                                     </div>
                                     <div class="product-info">
                                         <a href="shop-details.html">Recuerdos Plant</a>
@@ -376,7 +376,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/40.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/40.png')}}" alt=""></a>
                                         <!-- Product Tag -->
                                         <div class="product-tag">
                                             <a href="#">Hot</a>
@@ -402,7 +402,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/41.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/41.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -424,7 +424,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/42.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/42.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -446,7 +446,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/43.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/43.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -468,7 +468,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/44.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('img/bg-img/44.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -490,7 +490,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/45.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/45.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -512,7 +512,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/46.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/46.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -534,7 +534,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/47.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/47.png')}}" alt=""></a>
                                         <!-- Product Tag -->
                                         <div class="product-tag sale-tag">
                                             <a href="#">Sale</a>
@@ -560,7 +560,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/48.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/48.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -594,7 +594,7 @@
     <!-- ##### Shop Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area bg-img" style="background-image: url(frontend/img/bg-img/3.jpg);">
+    <footer class="footer-area bg-img" style="background-image: url({{asset('frontend/img/bg-img/3.jpg')}};">
         <!-- Main Footer Area -->
         <div class="main-footer-area">
             <div class="container">
@@ -604,7 +604,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                                <a href="#"><img src="{{asset('frontend/img/core-img/logo.png')}}" alt=""></a>
                             </div>
                             <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
                             <div class="social-info">
@@ -730,15 +730,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="frontendjs/jquery/jquery-2.2.4.min.js"></script>
+    <script src="{{asset('frontend/js/jquery/jquery-2.2.4.min.js')}}"></script>
     <!-- Popper js -->
-    <script src="frontendjs/bootstrap/popper.min.js"></script>
+    <script src="{{asset('frontend/js/bootstrap/popper.min.js')}}"></script>
     <!-- Bootstrap js -->
-    <script src="frontendjs/bootstrap/bootstrap.min.js"></script>
+    <script src="{{asset('frontend/js/bootstrap/bootstrap.min.js')}}"></script>
     <!-- All Plugins js -->
-    <script src="frontendjs/plugins/plugins.js"></script>
+    <script src="{{asset('frontend/js/plugins/plugins.js')}}"></script>
     <!-- Active js -->
-    <script src="frontend/js/active.js"></script>
+    <script src="{{asset('frontend/js/active.js')}}"></script>
 </body>
 
 </html>
