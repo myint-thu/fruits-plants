@@ -39,7 +39,7 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: infodeercreative@gmail.com</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +1 234 122 122</span></a>
                             </div>
 
@@ -61,11 +61,11 @@
                                 </div>
                                 <!-- Login -->
                                 <div class="login">
-                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> <span>Login</span></a>
+                                    <a href="{{route('registerpage')}}"><i class="fa fa-user" aria-hidden="true"></i> <span>Login</span></a>
                                 </div>
                                 <!-- Cart -->
                                 <div class="cart">
-                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -372,35 +372,45 @@
                         <div class="row">
 
                             <!-- Single Product Area -->
+                            @foreach($items as $item)
                             <div class="col-12 col-sm-6 col-lg-4">
+                                
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/40.png')}}" alt=""></a>
+                                         <a href="shop-details.html"> 
+                                            <img src="{{asset($item->photo)}} " alt="">
+                                        </a> 
                                         <!-- Product Tag -->
                                         <div class="product-tag">
                                             <a href="#">Hot</a>
                                         </div>
                                         <div class="product-meta d-flex">
-                                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
-                                            <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
-                                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                                            {{-- <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a> --}}
+                                            <a href="{{route('cartpage')}}" class="addtocartbtn text-decoration-none" data-id="{{$item->id}}" data-name="{{$item->name}}" data-photo="{{$item->photo}}" data-price="{{$item->price}}">
+                                            Add to cart</a>
+                                            {{-- <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a> --}}
                                         </div>
                                     </div>
                                     <!-- Product Info -->
                                     <div class="product-info mt-15 text-center">
                                         <a href="shop-details.html">
-                                            <p>Cactus Flower</p>
+                                            <p>{{$item->name}}</p>
+                                            {{-- <p>Cactus Flower</p> --}}
                                         </a>
-                                        <h6>$10.99</h6>
+                                        <p>{{$item->price}} ks</p>
+                                        {{-- <h6>$10.99</h6> --}}
                                     </div>
                                 </div>
+                                
+                            </div>
+                            @endforeach
                             </div>
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            {{-- <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
-                                    <!-- Product Image -->
+                                    Product Image 
                                     <div class="product-img">
                                         <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/41.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
@@ -409,7 +419,7 @@
                                             <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
                                         </div>
                                     </div>
-                                    <!-- Product Info -->
+                                     Product Info 
                                     <div class="product-info mt-15 text-center">
                                         <a href="shop-details.html">
                                             <p>Cactus Flower</p>
@@ -417,12 +427,12 @@
                                         <h6>$10.99</h6>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            {{-- <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
-                                    <!-- Product Image -->
+                                     Product Image 
                                     <div class="product-img">
                                         <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/42.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
@@ -431,7 +441,7 @@
                                             <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
                                         </div>
                                     </div>
-                                    <!-- Product Info -->
+                                     Product Info 
                                     <div class="product-info mt-15 text-center">
                                         <a href="shop-details.html">
                                             <p>Cactus Flower</p>
@@ -439,12 +449,12 @@
                                         <h6>$10.99</h6>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            {{-- <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
-                                    <!-- Product Image -->
+                                     Product Image 
                                     <div class="product-img">
                                         <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/43.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
@@ -453,7 +463,7 @@
                                             <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
                                         </div>
                                     </div>
-                                    <!-- Product Info -->
+                                     Product Info 
                                     <div class="product-info mt-15 text-center">
                                         <a href="shop-details.html">
                                             <p>Cactus Flower</p>
@@ -461,21 +471,21 @@
                                         <h6>$10.99</h6>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            {{-- <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
-                                    <!-- Product Image -->
+                                     Product Image 
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="{{asset('img/bg-img/44.png')}}" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/44.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
                                             <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
                                         </div>
                                     </div>
-                                    <!-- Product Info -->
+                                    Product Info 
                                     <div class="product-info mt-15 text-center">
                                         <a href="shop-details.html">
                                             <p>Cactus Flower</p>
@@ -483,12 +493,12 @@
                                         <h6>$10.99</h6>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            {{-- <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
-                                    <!-- Product Image -->
+                                     Product Image 
                                     <div class="product-img">
                                         <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/45.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
@@ -497,7 +507,7 @@
                                             <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
                                         </div>
                                     </div>
-                                    <!-- Product Info -->
+                                    Product Info 
                                     <div class="product-info mt-15 text-center">
                                         <a href="shop-details.html">
                                             <p>Cactus Flower</p>
@@ -505,12 +515,12 @@
                                         <h6>$10.99</h6>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            {{-- <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
-                                    <!-- Product Image -->
+                                     Product Image
                                     <div class="product-img">
                                         <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/46.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
@@ -519,7 +529,7 @@
                                             <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
                                         </div>
                                     </div>
-                                    <!-- Product Info -->
+                                    Product Info 
                                     <div class="product-info mt-15 text-center">
                                         <a href="shop-details.html">
                                             <p>Cactus Flower</p>
@@ -527,15 +537,15 @@
                                         <h6>$10.99</h6>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            {{-- <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
-                                    <!-- Product Image -->
+                                     Product Image 
                                     <div class="product-img">
                                         <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/47.png')}}" alt=""></a>
-                                        <!-- Product Tag -->
+                                        Product Tag 
                                         <div class="product-tag sale-tag">
                                             <a href="#">Sale</a>
                                         </div>
@@ -545,7 +555,7 @@
                                             <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
                                         </div>
                                     </div>
-                                    <!-- Product Info -->
+                                     Product Info 
                                     <div class="product-info mt-15 text-center">
                                         <a href="shop-details.html">
                                             <p>Cactus Flower</p>
@@ -553,12 +563,12 @@
                                         <h6>$10.99</h6>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            {{-- <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
-                                    <!-- Product Image -->
+                                     Product Image 
                                     <div class="product-img">
                                         <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/48.png')}}" alt=""></a>
                                         <div class="product-meta d-flex">
@@ -567,7 +577,7 @@
                                             <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
                                         </div>
                                     </div>
-                                    <!-- Product Info -->
+                                    Product Info 
                                     <div class="product-info mt-15 text-center">
                                         <a href="shop-details.html">
                                             <p>Cactus Flower</p>
@@ -575,8 +585,8 @@
                                         <h6>$10.99</h6>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div> --}}
+                        
 
                         <!-- Pagination -->
                         <nav aria-label="Page navigation">
@@ -739,6 +749,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="{{asset('frontend/js/plugins/plugins.js')}}"></script>
     <!-- Active js -->
     <script src="{{asset('frontend/js/active.js')}}"></script>
+    <script type="text/javascript" src="{{asset('fruitplant.js')}}"></script>
+
 </body>
 
 </html>

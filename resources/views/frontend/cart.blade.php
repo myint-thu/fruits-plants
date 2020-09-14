@@ -39,7 +39,7 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: infodeercreative@gmail.com</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +1 234 122 122</span></a>
                             </div>
 
@@ -61,7 +61,7 @@
                                 </div>
                                 <!-- Login -->
                                 <div class="login">
-                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> <span>Login</span></a>
+                                    <a href="{{route('registerpage')}}"><i class="fa fa-user" aria-hidden="true"></i> <span>Login</span></a>
                                 </div>
                                 <!-- Cart -->
                                 <div class="cart">
@@ -182,96 +182,7 @@
     <!-- ##### Breadcrumb Area End ##### -->
 
     <!-- ##### Cart Area Start ##### -->
-    <div class="cart-area section-padding-0-100 clearfix">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="cart-table clearfix">
-                        <table class="table table-responsive">
-                            <thead>
-                                <tr>
-                                    <th>Products</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
-                                    <th>TOTAL</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="cart_product_img">
-                                        <a href="#"><img src="img/bg-img/34.jpg" alt="Product"></a>
-                                        <h5>Recuerdos Plant</h5>
-                                    </td>
-                                    <td class="qty">
-                                        <div class="quantity">
-                                            <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                            <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="1">
-                                            <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                        </div>
-                                    </td>
-                                    <td class="price"><span>$9.99</span></td>
-                                    <td class="total_price"><span>$9.99</span></td>
-                                    <td class="action"><a href="#"><i class="icon_close"></i></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-
-                <!-- Coupon Discount -->
-                <div class="col-12 col-lg-6">
-                    <div class="coupon-discount mt-70">
-                        <h5>COUPON DISCOUNT</h5>
-                        <p>Coupons can be applied in the cart prior to checkout. Add an eligible item from the booth of the seller that created the coupon code to your cart. Click the green "Apply code" button to add the coupon to your order. The order total will update to indicate the savings specific to the coupon code entered.</p>
-                        <form action="#" method="post">
-                            <input type="text" name="coupon-code" placeholder="Enter your coupon code">
-                            <button type="submit">APPLY COUPON</button>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- Cart Totals -->
-                <div class="col-12 col-lg-6">
-                    <div class="cart-totals-area mt-70">
-                        <h5 class="title--">Cart Total</h5>
-                        <div class="subtotal d-flex justify-content-between">
-                            <h5>Subtotal</h5>
-                            <h5>$9.99</h5>
-                        </div>
-                        <div class="shipping d-flex justify-content-between">
-                            <h5>Shipping</h5>
-                            <div class="shipping-address">
-                                <form action="#" method="post">
-                                    <select class="custom-select">
-                                      <option selected>Country</option>
-                                      <option value="1">USA</option>
-                                      <option value="2">Latvia</option>
-                                      <option value="3">Japan</option>
-                                      <option value="4">Bangladesh</option>
-                                    </select>
-                                    <input type="text" name="shipping-text" id="shipping-text" placeholder="State">
-                                    <input type="text" name="shipping-zip" id="shipping-zip" placeholder="ZIP">
-                                    <button type="submit">Update Total</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="total d-flex justify-content-between">
-                            <h5>Total</h5>
-                            <h5>$9.99</h5>
-                        </div>
-                        <div class="checkout-btn">
-                            <a href="#" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
+    @include('frontend.shopcart')
     <!-- ##### Cart Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
@@ -420,6 +331,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="{{asset('frontend/js/plugins/plugins.js')}}"></script>
     <!-- Active js -->
     <script src="{{asset('frontend/js/active.js')}}"></script>
+    <script type="text/javascript" src="{{asset('fruitplant.js')}}"></script>
+
 </body>
 
 </html>

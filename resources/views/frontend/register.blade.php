@@ -1,3 +1,5 @@
+
+<!-- Subcategory Title -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +26,7 @@
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-circle"></div>
         <div class="preloader-img">
-            <img src="img/core-img/leaf.png" alt="">
+            <img src="{{asset('frontend/img/core-img/leaf.png')}}" alt="">
         </div>
     </div>
 
@@ -65,7 +67,7 @@
                                 </div>
                                 <!-- Cart -->
                                 <div class="cart">
-                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +84,7 @@
                     <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                         <!-- Nav Brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="{{asset('frontend/img/core-img/logo.png" alt=""')}}"></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -100,38 +102,38 @@
                             <!-- Navbar Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="{{route('masterpage')}}">Home</a></li>
+                                    <li><a href="{{route('aboutpage')}}">About</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="{{route('masterpage')}}">Home</a></li>
+                                            <li><a href="{{route('aboutpage')}}">About</a></li>
                                             <li><a href="shop.html">Shop</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
                                                     <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
+                                                    <li><a href="{{route('checkoutpage')}}">Checkout</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="portfolio.html">Portfolio</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                                    <li><a href="single-portfolio.html">Portfolio Details</a></li>
+                                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
+                                                  {{--   <li><a href="{{route('portfoliodetail')}}">Portfolio Details</a></li> --}}
                                                 </ul>
                                             </li>
                                             <li><a href="blog.html">Blog</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-post.html">Blog Details</a></li>
+                                                    <li><a href="{{route('blogpage')}}">Blog</a></li>
+                                                    <li><a href="{{route('singlepage')}}">Blog Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="{{route('contactpage')}}">Contact</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
+                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
+                                    <li><a href="{{route('contactpage')}}">Contact</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->
@@ -163,7 +165,7 @@
     <div class="breadcrumb-area">
         <!-- Top Breadcrumb Area -->
         <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({{asset('frontend/img/bg-img/24.jpg')}});">
-            <h2>Checkout</h2>
+            <h2>Regrister</h2>
         </div>
 
         <div class="container">
@@ -172,129 +174,96 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="jumbotron jumbotron-fluid subtitle">
+      <div class="container">
+        <h1 class="text-center text-white"> Create Account </h1>
+      </div>
+  </div>
+  
+  <!-- Content -->
+  <div class="container my-5">
+
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <form action="signin" method="POST">
+              <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="small mb-1" for="inputName"> Name</label>
+                              <input class="form-control py-4" id="inputName" type="text" placeholder="Enter Name" name="name" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="small mb-1" for="phone">Phone Number</label>
+                              <input class="form-control py-4" id="phone" type="text" placeholder="Enter Phone Number" name="phone" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="small mb-1" for="inputEmailAddress">Email</label>
+                        <input class="form-control py-4" id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Enter email address" name="email" />
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="small mb-1" for="inputPassword">Password</label>
+                              <input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" name="password" />
+                              <font id="error" color="red"></font>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="small mb-1" for="inputConfirmPassword">Confirm Password</label>
+                              <input class="form-control py-4" id="inputConfirmPassword" type="password" placeholder="Confirm password" />
+                              <font id="cerror" color="red"></font>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="small mb-1" for="address"> Address </label>
+                        <textarea class="form-control" name="address"></textarea>
+                    </div>
+              
+              <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                
+                <button type="submit" class="btn btn-secondary mainfullbtncolor btn-block"> Create Account </button>
+              </div>
+          </form>
+
+          <div class=" mt-3 text-center ">
+            <a href="#" class="loginLink text-decoration-none">Have an account? Go to login</a>
+          </div>
+      </div>
+    </div>
+    
+    
+    
+
+  </div>
+  
     <!-- ##### Breadcrumb Area End ##### -->
 
-    <!-- ##### Checkout Area Start ##### -->
-    <div class="checkout_area mb-100">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-12 col-lg-7">
-                    <div class="checkout_details_area clearfix">
-                        <h5>Billing Details</h5>
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <label for="first_name">First Name *</label>
-                                    <input type="text" class="form-control" id="first_name" value="" required>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <label for="last_name">Last Name *</label>
-                                    <input type="text" class="form-control" id="last_name" value="" required>
-                                </div>
-                                <div class="col-12 mb-4">
-                                    <label for="email_address">Email Address *</label>
-                                    <input type="email" class="form-control" id="email_address" value="">
-                                </div>
-                                <div class="col-12 mb-4">
-                                    <label for="phone_number">Phone Number *</label>
-                                    <input type="number" class="form-control" id="phone_number" min="0" value="">
-                                </div>
-                                <div class="col-12 mb-4">
-                                    <label for="company">Company Name</label>
-                                    <input type="text" class="form-control" id="company" value="">
-                                </div>
-                                <div class="col-12 mb-4">
-                                    <label for="company">Address *</label>
-                                    <input type="text" class="form-control" id="address" value="">
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <label for="city">Town/City *</label>
-                                    <input type="text" class="form-control" id="city" value="">
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <label for="state">State/Province *</label>
-                                    <input type="text" class="form-control" id="state" value="">
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <label for="country">Country</label>
-                                    <select class="custom-select d-block w-100" id="country">
-                                        <option value="usa">United States</option>
-                                        <option value="uk">United Kingdom</option>
-                                        <option value="ger">Germany</option>
-                                        <option value="fra">France</option>
-                                        <option value="ind">India</option>
-                                        <option value="aus">Australia</option>
-                                        <option value="bra">Brazil</option>
-                                        <option value="cana">Canada</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <label for="postcode">Postcode/Zip</label>
-                                    <input type="text" class="form-control" id="postcode" value="">
-                                </div>
-                                <div class="col-md-12 mb-4">
-                                    <label for="order-notes">Order Notes</label>
-                                    <textarea class="form-control" id="order-notes" cols="30" rows="10" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-flex align-items-center">
-                                        <!-- Single Checkbox -->
-                                        <div class="custom-control custom-checkbox d-flex align-items-center mr-30">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1">Ship to a different address?</label>
-                                        </div>
-                                        <!-- Single Checkbox -->
-                                        <div class="custom-control custom-checkbox d-flex align-items-center">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                            <label class="custom-control-label" for="customCheck2">Create an account?</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <!-- ##### Contact Area Info Start ##### -->
 
-                <div class="col-12 col-lg-4">
-                    <div class="checkout-content">
-                        <h5 class="title--">Your Order</h5>
-                        <div class="products">
-                            <div class="products-data">
-                                <h5>Products:</h5>
-                                <div class="single-products d-flex justify-content-between align-items-center">
-                                    <p>Recuerdos Plant</p>
-                                    <h5>$9.99</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subtotal d-flex justify-content-between align-items-center">
-                            <h5>Subtotal</h5>
-                            <h5>$9.99</h5>
-                        </div>
-                        <div class="shipping d-flex justify-content-between align-items-center">
-                            <h5>Shipping</h5>
-                            <h5>$3.00</h5>
-                        </div>
-                        <div class="order-total d-flex justify-content-between align-items-center">
-                            <h5>Order Total</h5>
-                            <h5>$12.99</h5>
-                        </div>
-                        <div class="checkout-btn mt-30">
-                            <a href="#" class="btn alazea-btn w-100">Place Order</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### Checkout Area End ##### -->
+    <!-- ##### Contact Area Info End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+   
+    <!-- ##### Contact Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area bg-img" style="background-image: url({{asset('frontend/img/bg-img/3.jpg')}});">
@@ -307,7 +276,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                                <a href="#"><img src="{{asset('frontend/img/core-img/logo.png')}}" alt=""></a>
                             </div>
                             <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
                             <div class="social-info">
@@ -445,3 +414,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

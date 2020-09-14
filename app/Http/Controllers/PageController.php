@@ -47,6 +47,13 @@ class PageController extends Controller
     {
         return view('frontend.single');
     }
+       public function registerfun($value='')
+    {
+        return view('frontend.register');
+    }
+
+    
+
 
 
 
