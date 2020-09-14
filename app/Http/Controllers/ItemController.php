@@ -14,11 +14,11 @@ class ItemController extends Controller
      */
     public function index()
     {
+        //return "index";
         $items = Item::all();
         // dd($items);
 
-        return view('backend.items.index',
-            compact('items'));
+        return view('backend.items.index',compact('items'));
     }
 
     /**

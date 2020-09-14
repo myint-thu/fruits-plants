@@ -1,3 +1,5 @@
+
+<!-- Subcategory Title -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,7 +67,7 @@
                                 </div>
                                 <!-- Cart -->
                                 <div class="cart">
-                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"><small class="cartNoti"></small></span></span></a>
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +84,7 @@
                     <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                         <!-- Nav Brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="{{asset('frontend/img/core-img/logo.png" alt=""')}}"></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -106,24 +108,24 @@
                                         <ul class="dropdown">
                                             <li><a href="{{route('masterpage')}}">Home</a></li>
                                             <li><a href="{{route('aboutpage')}}">About</a></li>
-                                            <li><a href="{{route('shoppage')}}">Shop</a>
+                                            <li><a href="shop.html">Shop</a>
                                                 <ul class="dropdown">
                                                     <li><a href="{{route('shoppage')}}">Shop</a></li>
-                                                    <li><a href="{{route('shoppage')}}">Shop Details</a></li>
-                                                    <li><a href="{{route('shoppage')}}">Shopping Cart</a></li>
+                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                    <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
                                                     <li><a href="{{route('checkoutpage')}}">Checkout</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="portfolio.html">Portfolio</a>
                                                 <ul class="dropdown">
                                                     <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
-                                                    <li><a href="{{route('portfoliopage')}}">Portfolio Details</a></li>
+                                                  {{--   <li><a href="{{route('portfoliodetail')}}">Portfolio Details</a></li> --}}
                                                 </ul>
                                             </li>
-                                            <li><a href="{{route('blogpage')}}">Blog</a>
+                                            <li><a href="blog.html">Blog</a>
                                                 <ul class="dropdown">
                                                     <li><a href="{{route('blogpage')}}">Blog</a></li>
-                                                    <li><a href="{{route('blogpage')}}">Blog Details</a></li>
+                                                    <li><a href="{{route('singlepage')}}">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="{{route('contactpage')}}">Contact</a></li>
@@ -163,7 +165,7 @@
     <div class="breadcrumb-area">
         <!-- Top Breadcrumb Area -->
         <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({{asset('frontend/img/bg-img/24.jpg')}});">
-            <h2>Cart</h2>
+            <h2>Regrister</h2>
         </div>
 
         <div class="container">
@@ -172,18 +174,96 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="jumbotron jumbotron-fluid subtitle">
+      <div class="container">
+        <h1 class="text-center text-white"> Create Account </h1>
+      </div>
+  </div>
+  
+  <!-- Content -->
+  <div class="container my-5">
+
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <form action="signin" method="POST">
+              <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="small mb-1" for="inputName"> Name</label>
+                              <input class="form-control py-4" id="inputName" type="text" placeholder="Enter Name" name="name" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="small mb-1" for="phone">Phone Number</label>
+                              <input class="form-control py-4" id="phone" type="text" placeholder="Enter Phone Number" name="phone" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="small mb-1" for="inputEmailAddress">Email</label>
+                        <input class="form-control py-4" id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Enter email address" name="email" />
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="small mb-1" for="inputPassword">Password</label>
+                              <input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" name="password" />
+                              <font id="error" color="red"></font>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="small mb-1" for="inputConfirmPassword">Confirm Password</label>
+                              <input class="form-control py-4" id="inputConfirmPassword" type="password" placeholder="Confirm password" />
+                              <font id="cerror" color="red"></font>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="small mb-1" for="address"> Address </label>
+                        <textarea class="form-control" name="address"></textarea>
+                    </div>
+              
+              <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                
+                <button type="submit" class="btn btn-secondary mainfullbtncolor btn-block"> Create Account </button>
+              </div>
+          </form>
+
+          <div class=" mt-3 text-center ">
+            <a href="#" class="loginLink text-decoration-none">Have an account? Go to login</a>
+          </div>
+      </div>
+    </div>
+    
+    
+    
+
+  </div>
+  
     <!-- ##### Breadcrumb Area End ##### -->
 
-    <!-- ##### Cart Area Start ##### -->
-    @include('frontend.shopcart')
-    <!-- ##### Cart Area End ##### -->
+    <!-- ##### Contact Area Info Start ##### -->
+
+    <!-- ##### Contact Area Info End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+   
+    <!-- ##### Contact Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area bg-img" style="background-image: url({{asset('frontend/img/bg-img/3.jpg')}});">
@@ -242,7 +322,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/4.jpg')}}" alt=""></a>
+                                    <a href="shop-details.html"><img src="img/bg-img/4.jpg" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Cactus Flower</a>
@@ -253,7 +333,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/5.jpg')}}" alt=""></a>
+                                    <a href="shop-details.html"><img src="img/bg-img/5.jpg" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Tulip Flower</a>
@@ -304,12 +384,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         <div class="footer-nav">
                             <nav>
                                 <ul>
-                                    <li><a href="{{route('masterpage')}}">Home</a></li>
-                                    <li><a href="{{route('aboutpage')}}">About</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
                                     <li><a href="#">Service</a></li>
-                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
-                                    <li><a href="{{asset('blogpage')}}">Blog</a></li>
-                                    <li><a href="{{route('contactpage')}}">Contact</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -331,8 +411,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="{{asset('frontend/js/plugins/plugins.js')}}"></script>
     <!-- Active js -->
     <script src="{{asset('frontend/js/active.js')}}"></script>
-    <script type="text/javascript" src="{{asset('fruitplant.js')}}"></script>
-
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
