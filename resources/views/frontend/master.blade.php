@@ -65,7 +65,7 @@
                                 </div>
                                 <!-- Cart -->
                                 <div class="cart">
-                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"><small class="cartNoti"></small></span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +129,7 @@
                                             <li><a href="{{route('contactpage')}}">Contact</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{route('aboutpage')}}">Shop</a></li>
+                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
                                     <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
                                     <li><a href="{{route('contactpage')}}">Contact</a></li>
                                 </ul>

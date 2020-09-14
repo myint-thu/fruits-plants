@@ -1,6 +1,28 @@
 
 $(document).ready(function(){
 			getData();
+
+  count();		
+  function count(){
+    var myG = localStorage.getItem("G");
+    if (myG) {
+      var myG_obj = JSON.parse(myG);
+      if (myG_obj!=0) {
+        var count = myG_obj.length;
+
+        
+
+        
+
+        $(".cartNoti").html(count);
+
+      }else {
+        $(".cartNoti").html(0);    
+      }
+    }else {
+      $(".cartNoti").html(0);    
+    }
+  };
 			
 		
 		$('.addtocartbtn').click(function(){
@@ -51,6 +73,7 @@ $(document).ready(function(){
 				var data= $("#fruitplant_table");
 				var result = "";
 				var total=0;
+
 
 				if(myG!= null){
 					G = JSON.parse(myG);
@@ -104,6 +127,16 @@ $(document).ready(function(){
 				localStorage.setItem('G', JSON.stringify(G));
 				getData();
 			})
+
+
+
+			
+
+
+
+
+
+
 			// start buy now
 			// $('.buy_now').on('click',function(){
 			// 	var notes = $('.notes').val();

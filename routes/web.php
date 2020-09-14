@@ -39,6 +39,12 @@ Route::get('portfoliodetail','PageController@portfoliodetailfun')->name('portfol
 Route::get('blog','PageController@blogfun')->name('blogpage');
 Route::get('single','PageController@singlefun')->name('singlepage');
 
+//testing
+
+Route::get('login','PageController@loginfun')->name('loginpage');
+
+//endtesting
+
 
 
 

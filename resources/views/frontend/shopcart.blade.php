@@ -72,17 +72,18 @@
                                     </select>
                                     <input type="text" name="shipping-text" id="shipping-text" placeholder="Region">
                                     <input type="text" name="shipping-zip" id="shipping-zip" placeholder="Address">
-                                    <button type="submit">Update Total</button>
+                                    <input type="text" name="shipping-zip" id="shipping-zip" placeholder="Phone Number">
+                                    <div class="checkout-btn">
+                            <a href="{{route('loginpage')}}" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a>
+                        </div>
                                 </form>
                             </div>
                         </div>
                         <div class="total d-flex justify-content-between">
-                            <h5>Total</h5>
-                            <h5>$9.99</h5>
+                            {{-- <h5>Total</h5>
+                            <h5 id="fruitplant"></h5> --}}
                         </div>
-                        <div class="checkout-btn">
-                            <a href="#" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

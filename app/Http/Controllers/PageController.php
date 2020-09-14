@@ -53,4 +53,8 @@ class PageController extends Controller
 
    //s masterfunportfoliodetailfun
     //
+    public function loginfun($value='')
+    {
+        return view('frontend.login');
+    }
 }
