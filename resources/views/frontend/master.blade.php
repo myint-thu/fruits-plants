@@ -6,11 +6,17 @@
     <meta name="description" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
+<<<<<<< HEAD
     <title>Fruit&Plant</title>
+=======
+    <title>Fruits And Plants Management System</title>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('frontend/img/core-img/favicon.ico')}}">
@@ -40,8 +46,20 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
+<<<<<<< HEAD
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-791552059</span></a>
+=======
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i><span>Email: myintthu15@ucsmgy.edu.mm</span><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i><span>Email: shinehtetwai@ucsmgy.edu.mm</span>
+
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-791552059</span><br>
+                                    <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-789726113</span><br>
+                                    <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-754614738</span>
+                                </a>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
                             </div>
 
                             <!-- Top Header Content -->
@@ -51,12 +69,21 @@
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<<<<<<< HEAD
                                             <a class="dropdown-item" href="{{url('locale/en')}}">USA</a>
                                             <a class="dropdown-item" href="{{url('locale/y')}}">UK</a>
                                             <a class="dropdown-item" href="{{url('locale/my')}}">Myanmar</a>
                                             <a class="dropdown-item" href="{{url('locale/en')}}">Hindi</a>
                                             <a class="dropdown-item" href="{{url('locale/sp')}}">Spanish</a>
                                             <a class="dropdown-item" href="#">Latin</a>
+=======
+                                            <a class="dropdown-item" href="#">MYANMAR</a>
+                                            <a class="dropdown-item" href="#">ENGLISH</a>
+                                            {{-- <a class="dropdown-item" href="#">Bangla</a>
+                                            <a class="dropdown-item" href="#">Hindi</a>
+                                            <a class="dropdown-item" href="#">Spanish</a>
+                                            <a class="dropdown-item" href="#">Latin</a> --}}
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
                                         </div>
                                     </div>
                                 </div>
@@ -118,10 +145,17 @@
                                             <li><a href="{{route('portfoliopage')}}">Portfolio</a>
                                                 <ul class="dropdown">
                                                     <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
+<<<<<<< HEAD
                                                    {{--  <li><a href="{{route('portfoliopage')}}">Portfolio Details</a></li> --}}
                                                 </ul>
                                             </li>
                                            {{--  <li><a href="blog.html">Blog</a>
+=======
+                                                    {{-- <li><a href="{{route('portfoliopage')}}">Portfolio Details</a></li> --}}
+                                                </ul>
+                                            </li>
+                                            {{-- <li><a href="blog.html">Blog</a>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
                                                 <ul class="dropdown">
                                                     <li><a href="{{route('blogpage')}}">Blog</a></li>
                                                     <li><a href="{{route('blogpage')}}">Blog Details</a></li>
@@ -176,7 +210,11 @@
                                 <h2>Plants exist in the weather and light rays that surround them</h2>
                                 <p>OK.</p>
                                 <div class="welcome-btn-group">
+<<<<<<< HEAD
                                     {{-- <a href="#" class="btn alazea-btn mr-30">GET STARTED</a> --}}
+=======
+                                    <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
                                     <a href="{{route('contactpage')}}" class="btn alazea-btn active">CONTACT US</a>
                                 </div>
                             </div>
@@ -197,7 +235,11 @@
                                 <h2>Plants exist in the weather and light rays that surround them</h2>
                                 <p></p>
                                 <div class="welcome-btn-group">
+<<<<<<< HEAD
                                     {{-- <a href="#" class="btn alazea-btn mr-30">GET STARTED</a> --}}
+=======
+                                    <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
                                     <a href="{{route('contactpage')}}" class="btn alazea-btn active">CONTACT US</a>
                                 </div>
                             </div>
@@ -631,7 +673,11 @@
                 <div class="col-12 col-lg-6">
                     <!-- Google Maps -->
                     <div class="map-area mb-100">
+<<<<<<< HEAD
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59932.12069023256!2d94.9189613811491!3d20.14416028982741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30b7d1a2fdd47897%3A0xa4a346b2ae5f34ee!2sMagway!5e0!3m2!1sen!2smm!4v1600191245786!5m2!1sen!2smm" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+=======
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38340.639363397575!2d94.9113554188397!3d20.153535804201624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30b7d1a2fdd47897%3A0xa4a346b2ae5f34ee!2z4YCZ4YCA4YC94YCx4YC4!5e0!3m2!1smy!2smm!4v1600152568451!5m2!1smy!2smm" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
                     </div>
                 </div>
             </div>
@@ -776,7 +822,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
+<<<<<<< HEAD
     <script src="{{asset('frontend/js/jquery/jquery-3.3.1.min.js')}}"></script>
+=======
+    <script src="{{asset('frontend/js/jquery/jquery-3.5.1.min.js')}}"></script>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
     <!-- Popper js -->
     <script src="{{asset('frontend/js/bootstrap/popper.min.js')}}"></script>
     <!-- Bootstrap js -->

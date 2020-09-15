@@ -6,11 +6,16 @@
     <meta name="description" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
+<<<<<<< HEAD
     <title>Fruit&Plant</title>
+=======
+    <title>Fruits And Plants Management System</title>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('frontend/img/core-img/favicon.ico')}}">
@@ -40,8 +45,14 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +1 234 122 122</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: myintthu@ucsmgy.edu.mm</span><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: shinehtetwai@ucsmgy.edu.mm</span>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-791552059</span><br>
+                                <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-789726113</span><br>
+                                <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-754614738</span>
+                                </a>
                             </div>
 
                             <!-- Top Header Content -->
@@ -51,12 +62,12 @@
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">USA</a>
-                                            <a class="dropdown-item" href="#">UK</a>
-                                            <a class="dropdown-item" href="#">Bangla</a>
+                                            <a class="dropdown-item" href="#">MYANMAR</a>
+                                            <a class="dropdown-item" href="#">ENGLISH</a>
+                                            {{-- <a class="dropdown-item" href="#">Bangla</a>
                                             <a class="dropdown-item" href="#">Hindi</a>
                                             <a class="dropdown-item" href="#">Spanish</a>
-                                            <a class="dropdown-item" href="#">Latin</a>
+                                            <a class="dropdown-item" href="#">Latin</a> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -66,10 +77,17 @@
                                 </div>
                                 <!-- Cart -->
                                 <div class="cart">
+<<<<<<< HEAD
 {{-- 
                                     <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"><small class="cartNoti"></small></span></span></a> --}}
 
                                     <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"></span></span></a>
+=======
+
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"><small class="cartNoti"></small></span></span></a>
+
+                                    {{-- <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a> --}}
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
 
                                 </div>
                             </div>
@@ -87,7 +105,7 @@
                     <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                         <!-- Nav Brand -->
-                        <a href="index.html" class="nav-brand"><img src="frontend/{{asset('img/core-img/logo.png')}}" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="{{asset('frontend/img/core-img/logo.png')}}" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -412,7 +430,12 @@
                             @endforeach
                             </div>
 
+<<<<<<< HEAD
                            
+=======
+                            <!-- Single Product Area -->
+                            
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
                         
 
                         <!-- Pagination -->
@@ -567,7 +590,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
+<<<<<<< HEAD
     <script src="{{asset('frontend/js/jquery/jquery-3.3.1.min.js')}}"></script>
+=======
+    <script src="{{asset('frontend/js/jquery/jquery-3.5.1.min.js')}}"></script>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
     <!-- Popper js -->
     <script src="{{asset('frontend/js/bootstrap/popper.min.js')}}"></script>
     <!-- Bootstrap js -->

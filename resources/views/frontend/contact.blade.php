@@ -9,7 +9,11 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
+<<<<<<< HEAD
     <title>Fruit&Plant</title>
+=======
+    <title>Fruits And Plants Management System</title>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('frontend/img/core-img/favicon.ico')}}">
@@ -39,8 +43,14 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +1 234 122 122</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: myintthu15@ucsmgy.edu.mm</span><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: shinehtetwai@ucsmgy.edu.mm</span>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-791552059</span><br>
+                                <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-789726113</span><br>
+                                <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-754614738</span>
+                                </a>
                             </div>
 
                             <!-- Top Header Content -->
@@ -50,12 +60,12 @@
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">USA</a>
-                                            <a class="dropdown-item" href="#">UK</a>
-                                            <a class="dropdown-item" href="#">Bangla</a>
+                                            <a class="dropdown-item" href="#">MYANMAR</a>
+                                            <a class="dropdown-item" href="#">ENGLISH</a>
+                                           {{--  <a class="dropdown-item" href="#">Bangla</a>
                                             <a class="dropdown-item" href="#">Hindi</a>
                                             <a class="dropdown-item" href="#">Spanish</a>
-                                            <a class="dropdown-item" href="#">Latin</a>
+                                            <a class="dropdown-item" href="#">Latin</a> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -66,9 +76,15 @@
                                 <!-- Cart -->
                                 <div class="cart">
 
+<<<<<<< HEAD
                                  {{--    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"></span></span></a> --}}
 
                                     <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"></span></span></a>
+=======
+                                    {{-- <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"></span></span></a>
+ --}}
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"><small class="cartNoti">0</small></span></span></a>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
 
                                 </div>
                             </div>
@@ -86,7 +102,11 @@
                     <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                         <!-- Nav Brand -->
+<<<<<<< HEAD
                         <a href="{{route('masterpage')}}" class="nav-brand"><img src="{{asset('frontend/img/core-img/logo.png')}}" alt=""></a>
+=======
+                        <a href="index.html" class="nav-brand"><img src="{{asset('frontend/img/core-img/logo.png')}}" alt=""></a>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">

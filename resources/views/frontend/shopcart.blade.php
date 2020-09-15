@@ -36,6 +36,8 @@
                     </div>
                 </div>
             </div>
+            <textarea class="form-control notes" placeholder="Any Request..."></textarea>
+
 
             <div class="row">
 
@@ -64,23 +66,40 @@
                         <div class="shipping d-flex justify-content-between">
                             <h5>Shipping</h5>
                             <div class="shipping-address">
-                                <form action="#" method="post">
-                                    <select class="custom-select">
+                                
+                                    <select class="custom-select country">
                                       <option selected>Country</option>
                                       <option value="1">Myanmar</option>
                                       {{-- <option value="2">Latvia</option>
                                       <option value="3">Japan</option>
                                       <option value="4">Bangladesh</option> --}}
                                     </select>
-                                    <input type="text" name="shipping-text" id="shipping-text" placeholder="Region">
-                                    <input type="text" name="shipping-zip" id="shipping-zip" placeholder="Address">
-                                    <input type="text" name="shipping-zip" id="shipping-zip" placeholder="Phone Number">
+                                    <input type="text" name="shipping-text" id="shipping-text" placeholder="Region" class="region">
+                                    <input type="text" name="shipping-zip" id="shipping-zip" placeholder="Address" class="address">
+                                    <input type="text" name="shipping-zip" id="shipping-zip" placeholder="Phone Number" class="phone">
                                     <div class="checkout-btn">
+<<<<<<< HEAD
                                    
                             <a href="{{route('register')}}" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a>
                           
+=======
+
+                                    
+                                       @role('Customer')
+                                       <button class="btn btn-secondary btn-block mainfullbtncolor checkoutbtn"> 
+                                          Check Out 
+                                      </button>
+                                      @else
+                                      <a href="{{route('register')}}" class="btn btn-secondary btn-block mainfullbtncolor"> 
+                                          Login To Check Out 
+                                      </a>
+                                      @endrole
+
+
+                            {{-- <input type="submit" value="PROCEED TO CHECKOUT" class="btn alazea-btn w-100 checkout"> --}}
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
                         </div>
-                                </form>
+                               
                             </div>
                         </div>
                         <div class="total d-flex justify-content-between">

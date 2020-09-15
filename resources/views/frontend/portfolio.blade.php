@@ -9,7 +9,11 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
+<<<<<<< HEAD
     <title>Fruit&Plant</title>
+=======
+    <title>Fruits And Plants Management System</title>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('frontend/img/core-img/favicon.ico')}}">
@@ -39,8 +43,14 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +1 234 122 122</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: myintthu15@ucsmgy.edu.mm</span><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: shinehtetwai@ucsmgy.edu.mm</span>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-791552059</span><br>
+                                <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-789726113</span><br>
+                                <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-754614738</span>
+                                </a>
                             </div>
 
                             <!-- Top Header Content -->
@@ -50,12 +60,12 @@
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">USA</a>
-                                            <a class="dropdown-item" href="#">UK</a>
-                                            <a class="dropdown-item" href="#">Bangla</a>
+                                            <a class="dropdown-item" href="#">MYANMAR</a>
+                                            <a class="dropdown-item" href="#">ENGLISH</a>
+                                            {{-- <a class="dropdown-item" href="#">Bangla</a>
                                             <a class="dropdown-item" href="#">Hindi</a>
                                             <a class="dropdown-item" href="#">Spanish</a>
-                                            <a class="dropdown-item" href="#">Latin</a>
+                                            <a class="dropdown-item" href="#">Latin</a> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -66,11 +76,17 @@
                                 <!-- Cart -->
                                 <div class="cart">
 
+<<<<<<< HEAD
                                     <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"></span></span></a>
 
                                     {{-- <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a> --}}
 
                                     
+=======
+                                   {{--  <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"></span></span></a> --}}
+
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"><small class="cartNoti">0</small></span></span></a>
+>>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
 
                                 </div>
                             </div>
@@ -224,7 +240,7 @@
                     <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/16.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/16.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
+                        <a href="frontend/img/bg-img/16.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
                             <div class="port-hover-text">
                                 <h3>Minimal Flower Store</h3>
                                 <h5>Office Plants</h5>
@@ -239,7 +255,7 @@
                     <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/17.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/17.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 2">
+                        <a href="frontend/img/bg-img/17.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 2">
                             <div class="port-hover-text">
                                 <h3>Minimal Flower Store</h3>
                                 <h5>Office Plants</h5>
@@ -269,7 +285,7 @@
                     <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/20.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/20.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 5">
+                        <a href="frontend/img/bg-img/20.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 5">
                             <div class="port-hover-text">
                                 <h3>Minimal Flower Store</h3>
                                 <h5>Office Plants</h5>
@@ -299,7 +315,7 @@
                     <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/22.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/22.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 7">
+                        <a href="frontend/img/bg-img/22.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 7">
                             <div class="port-hover-text">
                                 <h3>Minimal Flower Store</h3>
                                 <h5>Office Plants</h5>
@@ -314,7 +330,7 @@
                     <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/16.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/16.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
+                        <a href="frontend/img/bg-img/16.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
                             <div class="port-hover-text">
                                 <h3>Minimal Flower Store</h3>
                                 <h5>Office Plants</h5>
@@ -329,7 +345,7 @@
                     <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/17.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/17.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 2">
+                        <a href="frontend/img/bg-img/17.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 2">
                             <div class="port-hover-text">
                                 <h3>Minimal Flower Store</h3>
                                 <h5>Office Plants</h5>
@@ -344,7 +360,7 @@
                     <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/19.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/19.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 4">
+                        <a href="frontend/img/bg-img/19.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 4">
                             <div class="port-hover-text">
                                 <h3>Minimal Flower Store</h3>
                                 <h5>Office Plants</h5>
@@ -359,7 +375,7 @@
                     <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/20.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/20.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 5">
+                        <a href="frontend/img/bg-img/20.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 5">
                             <div class="port-hover-text">
                                 <h3>Minimal Flower Store</h3>
                                 <h5>Office Plants</h5>
@@ -374,7 +390,7 @@
                     <div class="portfolio-thumbnail bg-img" style="background-image: url(frontend/img/bg-img/21.jpg);"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/21.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 6">
+                        <a href="frontend/img/bg-img/21.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 6">
                             <div class="port-hover-text">
                                 <h3>Minimal Flower Store</h3>
                                 <h5>Office Plants</h5>
@@ -389,7 +405,7 @@
                     <div class="portfolio-thumbnail bg-img" style="background-image: url(frontend/img/bg-img/22.jpg);"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/22.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 7">
+                        <a href="frontend/img/bg-img/22.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 7">
                             <div class="port-hover-text">
                                 <h3>Minimal Flower Store</h3>
                                 <h5>Office Plants</h5>
@@ -414,7 +430,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                                <a href="#"><img src="frontend/img/core-img/logo.png" alt=""></a>
                             </div>
                             <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
                             <div class="social-info">
