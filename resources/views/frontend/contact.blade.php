@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
+    <title>Fruit&Plant</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('frontend/img/core-img/favicon.ico')}}">
@@ -65,11 +65,11 @@
                                 </div>
                                 <!-- Cart -->
                                 <div class="cart">
-<<<<<<< HEAD
-                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"></span></span></a>
-=======
-                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
->>>>>>> 2bbcf020acf218a812d8e23833f742c00695b51f
+
+                                 {{--    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"></span></span></a> --}}
+
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"></span></span></a>
+
                                 </div>
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                     <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                         <!-- Nav Brand -->
-                        <a href="index.html" class="nav-brand"><img src="{{asset('frontend/img/core-img/logo.png" alt=""')}}"></a>
+                        <a href="{{route('masterpage')}}" class="nav-brand"><img src="{{asset('frontend/img/core-img/logo.png')}}" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -112,10 +112,10 @@
                                             <li><a href="{{route('aboutpage')}}">About</a></li>
                                             <li><a href="shop.html">Shop</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                    {{-- <li><a href="{{route('shoppage')}}">Shop</a></li> --}}
+                                                    {{-- <li><a href="shop-details.html">Shop Details</a></li> --}}
                                                     <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
-                                                    <li><a href="{{route('checkoutpage')}}">Checkout</a></li>
+                                                   {{--  <li><a href="{{route('checkoutpage')}}">Checkout</a></li> --}}
                                                 </ul>
                                             </li>
                                             <li><a href="portfolio.html">Portfolio</a>
@@ -124,12 +124,12 @@
                                                   {{--   <li><a href="{{route('portfoliodetail')}}">Portfolio Details</a></li> --}}
                                                 </ul>
                                             </li>
-                                            <li><a href="blog.html">Blog</a>
+                                          {{--   <li><a href="blog.html">Blog</a>
                                                 <ul class="dropdown">
                                                     <li><a href="{{route('blogpage')}}">Blog</a></li>
                                                     <li><a href="{{route('singlepage')}}">Blog Details</a></li>
                                                 </ul>
-                                            </li>
+                                            </li> --}}
                                             <li><a href="{{route('contactpage')}}">Contact</a></li>
                                         </ul>
                                     </li>
@@ -175,7 +175,7 @@
                 <div class="col-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('masterpage')}}"><i class="fa fa-home"></i> Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Contact</li>
                         </ol>
                     </nav>
@@ -192,7 +192,7 @@
                 <!-- Contact Thumbnail -->
                 <div class="col-12 col-md-6">
                     <div class="contact--thumbnail">
-                        <img src="img/bg-img/25.jpg" alt="">
+                        <img src="frontend/img/bg-img/25.jpg" alt="">
                     </div>
                 </div>
 
@@ -204,9 +204,9 @@
                     </div>
                     <!-- Contact Information -->
                     <div class="contact-information">
-                        <p><span>Address:</span> 505 Silk Rd, New York</p>
-                        <p><span>Phone:</span> +1 234 122 122</p>
-                        <p><span>Email:</span> info.deercreative@gmail.com</p>
+                        <p><span>Address:</span> Magway,Padauk Street</p>
+                        <p><span>Phone:</span> 09-789726113</p>
+                        <p><span>Email:</span> myintthu32094@gmail.com</p>
                         <p><span>Open hours:</span> Mon - Sun: 8 AM to 9 PM</p>
                         <p><span>Happy hours:</span> Sat: 2 PM to 4 PM</p>
                     </div>
@@ -261,7 +261,7 @@
                 <div class="col-12 col-lg-6">
                     <!-- Google Maps -->
                     <div class="map-area mb-100">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22236.40558254599!2d-118.25292394686001!3d34.057682914027104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z4Kay4Ka4IOCmj-CmnuCnjeCmnOCnh-CmsuCnh-CmuCwg4KaV4KeN4Kav4Ka-4Kay4Ka_4Kar4KeL4Kaw4KeN4Kao4Ka_4Kav4Ka84Ka-LCDgpq7gpr7gprDgp43gppXgpr_gpqgg4Kav4KeB4KaV4KeN4Kak4Kaw4Ka-4Ka34KeN4Kaf4KeN4Kaw!5e0!3m2!1sbn!2sbd!4v1532328708137" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59932.12069023256!2d94.9189613811491!3d20.14416028982741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30b7d1a2fdd47897%3A0xa4a346b2ae5f34ee!2sMagway!5e0!3m2!1sen!2smm!4v1600194126492!5m2!1sen!2smm" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -326,7 +326,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="img/bg-img/4.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/4.jpg" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Cactus Flower</a>
@@ -337,7 +337,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="img/bg-img/5.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/5.jpg" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Tulip Flower</a>
@@ -355,9 +355,9 @@
                             </div>
 
                             <div class="contact-information">
-                                <p><span>Address:</span> 505 Silk Rd, New York</p>
-                                <p><span>Phone:</span> +1 234 122 122</p>
-                                <p><span>Email:</span> info.deercreative@gmail.com</p>
+                                <p><span>Address:</span> Magway,Padauk Street</p>
+                                <p><span>Phone:</span> 09-789726113</p>
+                                <p><span>Email:</span> myintthu32094@gmail.com</p>
                                 <p><span>Open hours:</span> Mon - Sun: 8 AM to 9 PM</p>
                                 <p><span>Happy hours:</span> Sat: 2 PM to 4 PM</p>
                             </div>

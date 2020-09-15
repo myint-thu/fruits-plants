@@ -26,7 +26,6 @@ Route::resource('categories','CategoryController');
 Route::resource('items','ItemController');
 Route::get('dashboard','BackendController@dashboardfun')->name('dashboardpage');
 
-//>>>>>>> a83c7b7c5b3e1704108f35c7f65116fc161297a4
 
 //soethuwin
 
@@ -56,8 +55,7 @@ Route::get('login','PageController@loginfun')->name('loginpage');
 
 
 
-//<<<<<<< HEAD
-////>>>>>>> efdb83e657a40eac626457bdc2564f977ddf9f03
+
 Route::middleware('role:Admin')->group(function (){
 Route::get('dashboard','BackendController@dashboardfun')->name('dashboardpage');
 Route::resource('items','ItemController');
@@ -66,7 +64,7 @@ Route::resource('items','ItemController');
 
 
 //=======
-//>>>>>>> a83c7b7c5b3e1704108f35c7f65116fc161297a4
+
 Route::get('/testing', function ($value=''){
 	return "That is our project testing";
 });
@@ -74,3 +72,11 @@ Route::get('/testing', function ($value=''){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+///language translation
+// Route::get('locale/{locale}',function ($locale)){
+// 	Session::put('locale',$locale);
+// 	return redirect()->back();
+	
+// });
+

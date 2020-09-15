@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
+    <title>Fruit&Plant</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('frontend/img/core-img/favicon.ico')}}">
@@ -65,11 +66,11 @@
                                 </div>
                                 <!-- Cart -->
                                 <div class="cart">
-<<<<<<< HEAD
-                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"><small class="cartNoti"></small></span></span></a>
-=======
-                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
->>>>>>> 2bbcf020acf218a812d8e23833f742c00695b51f
+{{-- 
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"><small class="cartNoti"></small></span></span></a> --}}
+
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"></span></span></a>
+
                                 </div>
                             </div>
                         </div>
@@ -112,24 +113,24 @@
                                             <li><a href="{{route('aboutpage')}}">About</a></li>
                                             <li><a href="shop.html">Shop</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                    {{-- <li><a href="{{route('shoppage')}}">Shop</a></li>
+                                                    <li><a href="shop-details.html">Shop Details</a></li> --}}
                                                     <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
-                                                    <li><a href="{{route('checkoutpage')}}">Checkout</a></li>
+                                                    {{-- <li><a href="{{route('checkoutpage')}}">Checkout</a></li> --}}
                                                 </ul>
                                             </li>
                                             <li><a href="{{route('portfoliopage')}}">Portfolio</a>
                                                 <ul class="dropdown">
                                                     <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
-                                                    <li><a href="{{route('portfoliopage')}}">Portfolio Details</a></li>
+                                                   {{--  <li><a href="{{route('portfoliopage')}}">Portfolio Details</a></li> --}}
                                                 </ul>
                                             </li>
-                                            <li><a href="{{route('blogpage')}}">Blog</a>
+                                           {{--  <li><a href="{{route('blogpage')}}">Blog</a>
                                                 <ul class="dropdown">
                                                     <li><a href="blog.html">Blog</a></li>
                                                     <li><a href="single-post.html">Blog Details</a></li>
                                                 </ul>
-                                            </li>
+                                            </li> --}}
                                             <li><a href="{{route('contactpage')}}">Contact</a></li>
                                         </ul>
                                     </li>
@@ -175,7 +176,7 @@
                 <div class="col-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('masterpage')}}"><i class="fa fa-home"></i> Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Shop</li>
                         </ol>
                     </nav>
@@ -411,185 +412,7 @@
                             @endforeach
                             </div>
 
-                            <!-- Single Product Area -->
-                            {{-- <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-area mb-50">
-                                    Product Image 
-                                    <div class="product-img">
-                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/41.png')}}" alt=""></a>
-                                        <div class="product-meta d-flex">
-                                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
-                                            <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
-                                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                                        </div>
-                                    </div>
-                                     Product Info 
-                                    <div class="product-info mt-15 text-center">
-                                        <a href="shop-details.html">
-                                            <p>Cactus Flower</p>
-                                        </a>
-                                        <h6>$10.99</h6>
-                                    </div>
-                                </div>
-                            </div> --}}
-
-                            <!-- Single Product Area -->
-                            {{-- <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-area mb-50">
-                                     Product Image 
-                                    <div class="product-img">
-                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/42.png')}}" alt=""></a>
-                                        <div class="product-meta d-flex">
-                                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
-                                            <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
-                                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                                        </div>
-                                    </div>
-                                     Product Info 
-                                    <div class="product-info mt-15 text-center">
-                                        <a href="shop-details.html">
-                                            <p>Cactus Flower</p>
-                                        </a>
-                                        <h6>$10.99</h6>
-                                    </div>
-                                </div>
-                            </div> --}}
-
-                            <!-- Single Product Area -->
-                            {{-- <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-area mb-50">
-                                     Product Image 
-                                    <div class="product-img">
-                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/43.png')}}" alt=""></a>
-                                        <div class="product-meta d-flex">
-                                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
-                                            <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
-                                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                                        </div>
-                                    </div>
-                                     Product Info 
-                                    <div class="product-info mt-15 text-center">
-                                        <a href="shop-details.html">
-                                            <p>Cactus Flower</p>
-                                        </a>
-                                        <h6>$10.99</h6>
-                                    </div>
-                                </div>
-                            </div> --}}
-
-                            <!-- Single Product Area -->
-                            {{-- <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-area mb-50">
-                                     Product Image 
-                                    <div class="product-img">
-                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/44.png')}}" alt=""></a>
-                                        <div class="product-meta d-flex">
-                                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
-                                            <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
-                                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                                        </div>
-                                    </div>
-                                    Product Info 
-                                    <div class="product-info mt-15 text-center">
-                                        <a href="shop-details.html">
-                                            <p>Cactus Flower</p>
-                                        </a>
-                                        <h6>$10.99</h6>
-                                    </div>
-                                </div>
-                            </div> --}}
-
-                            <!-- Single Product Area -->
-                            {{-- <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-area mb-50">
-                                     Product Image 
-                                    <div class="product-img">
-                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/45.png')}}" alt=""></a>
-                                        <div class="product-meta d-flex">
-                                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
-                                            <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
-                                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                                        </div>
-                                    </div>
-                                    Product Info 
-                                    <div class="product-info mt-15 text-center">
-                                        <a href="shop-details.html">
-                                            <p>Cactus Flower</p>
-                                        </a>
-                                        <h6>$10.99</h6>
-                                    </div>
-                                </div>
-                            </div> --}}
-
-                            <!-- Single Product Area -->
-                            {{-- <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-area mb-50">
-                                     Product Image
-                                    <div class="product-img">
-                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/46.png')}}" alt=""></a>
-                                        <div class="product-meta d-flex">
-                                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
-                                            <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
-                                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                                        </div>
-                                    </div>
-                                    Product Info 
-                                    <div class="product-info mt-15 text-center">
-                                        <a href="shop-details.html">
-                                            <p>Cactus Flower</p>
-                                        </a>
-                                        <h6>$10.99</h6>
-                                    </div>
-                                </div>
-                            </div> --}}
-
-                            <!-- Single Product Area -->
-                            {{-- <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-area mb-50">
-                                     Product Image 
-                                    <div class="product-img">
-                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/47.png')}}" alt=""></a>
-                                        Product Tag 
-                                        <div class="product-tag sale-tag">
-                                            <a href="#">Sale</a>
-                                        </div>
-                                        <div class="product-meta d-flex">
-                                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
-                                            <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
-                                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                                        </div>
-                                    </div>
-                                     Product Info 
-                                    <div class="product-info mt-15 text-center">
-                                        <a href="shop-details.html">
-                                            <p>Cactus Flower</p>
-                                        </a>
-                                        <h6>$10.99</h6>
-                                    </div>
-                                </div>
-                            </div> --}}
-
-                            <!-- Single Product Area -->
-                            {{-- <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-area mb-50">
-                                     Product Image 
-                                    <div class="product-img">
-                                        <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/48.png')}}" alt=""></a>
-                                        <div class="product-meta d-flex">
-                                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
-                                            <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
-                                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                                        </div>
-                                    </div>
-                                    Product Info 
-                                    <div class="product-info mt-15 text-center">
-                                        <a href="shop-details.html">
-                                            <p>Cactus Flower</p>
-                                        </a>
-                                        <h6>$10.99</h6>
-                                    </div>
-                                </div>
-                            </div> --}}
+                           
                         
 
                         <!-- Pagination -->
@@ -664,7 +487,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="img/bg-img/4.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/4.jpg" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Cactus Flower</a>
@@ -675,7 +498,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="img/bg-img/5.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/5.jpg" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Tulip Flower</a>
@@ -693,8 +516,8 @@
                             </div>
 
                             <div class="contact-information">
-                                <p><span>Address:</span> 505 Silk Rd, New York</p>
-                                <p><span>Phone:</span> +1 234 122 122</p>
+                                <p><span>Address:</span>Magway,Padauk street</p>
+                                <p><span>Phone:</span> 09-789726113</p>
                                 <p><span>Email:</span> info.deercreative@gmail.com</p>
                                 <p><span>Open hours:</span> Mon - Sun: 8 AM to 9 PM</p>
                                 <p><span>Happy hours:</span> Sat: 2 PM to 4 PM</p>
@@ -744,7 +567,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="{{asset('frontend/js/jquery/jquery-2.2.4.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery/jquery-3.3.1.min.js')}}"></script>
     <!-- Popper js -->
     <script src="{{asset('frontend/js/bootstrap/popper.min.js')}}"></script>
     <!-- Bootstrap js -->

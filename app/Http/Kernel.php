@@ -6,7 +6,17 @@ use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
 {
-    /**
+
+    // protected $middlewareGroups=[
+    //         'web'=>[
+    //             \App\Http\Middleware\EncryptCookies::class,
+    //             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse,
+    //             \Illuminate\Session\Middleware\StartSession::class,
+    //             //\Illuminate\session\Middleware\AutheniticateSession::class,
+    //             \Illuminate\View\Middlewaware\ShareErrorsFromSession::class
+
+    //     ]]
+     /**
      * The application's global HTTP middleware stack.
      *
      * These middleware are run during every request to your application.

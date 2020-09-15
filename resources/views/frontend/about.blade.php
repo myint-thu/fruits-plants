@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
+    <title>Fruit&Plant Management System</title>
 
     <!-- Favicon -->
     <link rel="icon" href="frontend/img/core-img/favicon.ico">
@@ -82,7 +82,7 @@
                     <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                         <!-- Nav Brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="frontend/img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -108,24 +108,24 @@
                                             <li><a href="{{route('aboutpage')}}">About</a></li>
                                             <li><a href="{{route('shoppage')}}">Shop</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                    {{-- <li><a href="{{route('shoppage')}}">Shop</a></li> --}}
+                                                    {{-- <li><a href="shop-details.html">Shop Details</a></li> --}}
                                                     <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
-                                                    <li><a href="{{route('checkoutpage')}}">Checkout</a></li>
+                                                  {{--   <li><a href="{{route('checkoutpage')}}">Checkout</a></li> --}}
                                                 </ul>
                                             </li>
                                             <li><a href="{{route('portfoliopage')}}">Portfolio</a>
                                                 <ul class="dropdown">
                                                     <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
-                                                    <li><a href="single-portfolio.html">Portfolio Details</a></li>
+                                                    {{-- <li><a href="single-portfolio.html">Portfolio Details</a></li> --}}
                                                 </ul>
                                             </li>
-                                            <li><a href="{{route('blogpage')}}">Blog</a>
+                                           {{--  <li><a href="{{route('blogpage')}}">Blog</a>
                                                 <ul class="dropdown">
                                                     <li><a href="{{route('blogpage')}}">Blog</a></li>
                                                     <li><a href="{{route('blogpage')}}">Blog Details</a></li>
                                                 </ul>
-                                            </li>
+                                            </li> --}}
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </li>
@@ -171,7 +171,7 @@
                 <div class="col-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('masterpage')}}"><i class="fa fa-home"></i> Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">About</li>
                         </ol>
                     </nav>
@@ -247,7 +247,7 @@
                             <!-- Single Benefits Area -->
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
-                                    <img src="img/core-img/b1.png" alt="">
+                                    <img src="frontend/img/core-img/b1.png" alt="">
                                     <h5>Quality Products</h5>
                                     <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
                                 </div>
@@ -256,7 +256,7 @@
                             <!-- Single Benefits Area -->
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
-                                    <img src="img/core-img/b2.png" alt="">
+                                    <img src="frontend/img/core-img/b2.png" alt="">
                                     <h5>Perfect Service</h5>
                                     <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
                                 </div>
@@ -265,7 +265,7 @@
                             <!-- Single Benefits Area -->
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
-                                    <img src="img/core-img/b3.png" alt="">
+                                    <img src="frontend/img/core-img/b3.png" alt="">
                                     <h5>100% Natural</h5>
                                     <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
                                 </div>
@@ -274,7 +274,7 @@
                             <!-- Single Benefits Area -->
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
-                                    <img src="img/core-img/b4.png" alt="">
+                                    <img src="frontend/img/core-img/b4.png" alt="">
                                     <h5>Environmentally friendly</h5>
                                     <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
                                 </div>
@@ -316,7 +316,7 @@
                         <div class="single-service-area d-flex align-items-center">
                             <!-- Icon -->
                             <div class="service-icon mr-30">
-                                <img src="img/core-img/s1.png" alt="">
+                                <img src="frontend/img/core-img/s1.png" alt="">
                             </div>
                             <!-- Content -->
                             <div class="service-content">
@@ -329,7 +329,7 @@
                         <div class="single-service-area d-flex align-items-center">
                             <!-- Icon -->
                             <div class="service-icon mr-30">
-                                <img src="img/core-img/s2.png" alt="">
+                                <img src="frontend/img/core-img/s2.png" alt="">
                             </div>
                             <!-- Content -->
                             <div class="service-content">
@@ -342,7 +342,7 @@
                         <div class="single-service-area d-flex align-items-center">
                             <!-- Icon -->
                             <div class="service-icon mr-30">
-                                <img src="img/core-img/s3.png" alt="">
+                                <img src="frontend/img/core-img/s3.png" alt="">
                             </div>
                             <!-- Content -->
                             <div class="service-content">
@@ -356,7 +356,7 @@
 
                 <div class="col-12 col-lg-6">
                     <div class="alazea-video-area bg-overlay mb-100">
-                        <img src="img/bg-img/23.jpg" alt="">
+                        <img src="frontend/img/bg-img/23.jpg" alt="">
                         <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-icon">
                             <i class="fa fa-play" aria-hidden="true"></i>
                         </a>
@@ -368,92 +368,7 @@
     <!-- ##### Service Area End ##### -->
 
     <!-- ##### Testimonial Area Start ##### -->
-    <section class="testimonial-area section-padding-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="testimonials-slides owl-carousel">
-
-                        <!-- Single Testimonial Slide -->
-                        <div class="single-testimonial-slide">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-thumb">
-                                        <img src="img/bg-img/13.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-content">
-                                        <!-- Section Heading -->
-                                        <div class="section-heading">
-                                            <h2>TESTIMONIAL</h2>
-                                            <p>Some kind words from clients about Alazea</p>
-                                        </div>
-                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
-                                        <div class="testimonial-author-info">
-                                            <h6>Mr. Nick Jonas</h6>
-                                            <p>CEO of NAVATECH</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Testimonial Slide -->
-                        <div class="single-testimonial-slide">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-thumb">
-                                        <img src="img/bg-img/14.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-content">
-                                        <!-- Section Heading -->
-                                        <div class="section-heading">
-                                            <h2>TESTIMONIAL</h2>
-                                            <p>Some kind words from clients about Alazea</p>
-                                        </div>
-                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
-                                        <div class="testimonial-author-info">
-                                            <h6>Mr. Nazrul Islam</h6>
-                                            <p>CEO of NAVATECH</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Testimonial Slide -->
-                        <div class="single-testimonial-slide">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-thumb">
-                                        <img src="img/bg-img/15.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-content">
-                                        <!-- Section Heading -->
-                                        <div class="section-heading">
-                                            <h2>TESTIMONIAL</h2>
-                                            <p>Some kind words from clients about Alazea</p>
-                                        </div>
-                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
-                                        <div class="testimonial-author-info">
-                                            <h6>Mr. Jonas Nick</h6>
-                                            <p>CEO of NAVATECH</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <!-- ##### Testimonial Area End ##### -->
 
     <!-- ##### Cool Facts Area Start ##### -->
@@ -465,7 +380,7 @@
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="single-cool-fact d-flex align-items-center justify-content-center mb-100">
                         <div class="cf-icon">
-                            <img src="img/core-img/cf1.png" alt="">
+                            <img src="frontend/img/core-img/cf1.png" alt="">
                         </div>
                         <div class="cf-content">
                             <h2><span class="counter">20</span></h2>
@@ -478,7 +393,7 @@
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="single-cool-fact d-flex align-items-center justify-content-center mb-100">
                         <div class="cf-icon">
-                            <img src="img/core-img/cf2.png" alt="">
+                            <img src="frontend/img/core-img/cf2.png" alt="">
                         </div>
                         <div class="cf-content">
                             <h2><span class="counter">70</span></h2>
@@ -491,7 +406,7 @@
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="single-cool-fact d-flex align-items-center justify-content-center mb-100">
                         <div class="cf-icon">
-                            <img src="img/core-img/cf3.png" alt="">
+                            <img src="frontend/img/core-img/cf3.png" alt="">
                         </div>
                         <div class="cf-content">
                             <h2><span class="counter">30</span>+</h2>
@@ -504,7 +419,7 @@
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="single-cool-fact d-flex align-items-center justify-content-center mb-100">
                         <div class="cf-icon">
-                            <img src="img/core-img/cf4.png" alt="">
+                            <img src="frontend/img/core-img/cf4.png" alt="">
                         </div>
                         <div class="cf-content">
                             <h2><span class="counter">80</span>K+</h2>
@@ -536,14 +451,14 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row img-fluid justify-content-center">
 
                 <!-- Single Team Member Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
-                        <div class="team-member-thumb">
-                            <img src="img/bg-img/team1.png" alt="">
+                        <div class="team-member-thumb img-fluid">
+                            <img src="frontend/img/bg-img/team1.jpg" alt="">
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -554,8 +469,8 @@
                         </div>
                         <!-- Team Member Info -->
                         <div class="team-member-info mt-30">
-                            <h5>Joseph Corbin</h5>
-                            <p>CEO &amp; Founder</p>
+                            <h5>Myint Thu</h5>
+                            {{-- <p>CEO &amp; Founder</p> --}}
                         </div>
                     </div>
                 </div>
@@ -564,8 +479,8 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
-                        <div class="team-member-thumb">
-                            <img src="img/bg-img/team2.png" alt="">
+                        <div class="team-member-thumb img-fluid">
+                            <img src="frontend/img/bg-img/team2.jpg" alt="">
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -576,8 +491,8 @@
                         </div>
                         <!-- Team Member Info -->
                         <div class="team-member-info mt-30">
-                            <h5>Tasha Deserio</h5>
-                            <p>Garden Designer</p>
+                            <h5>Soe Thu Win</h5>
+                           {{--  <p>Garden Designer</p> --}}
                         </div>
                     </div>
                 </div>
@@ -586,8 +501,8 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
-                        <div class="team-member-thumb">
-                            <img src="img/bg-img/team3.png" alt="">
+                        <div class="team-member-thumb img-fluid">
+                            <img src="frontend/img/bg-img/team3.jpg" alt="">
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -598,33 +513,14 @@
                         </div>
                         <!-- Team Member Info -->
                         <div class="team-member-info mt-30">
-                            <h5>Cody Baker</h5>
-                            <p>Plan Manager</p>
+                            <h5>Shine Htet Wai</h5>
+                            {{-- <p>Plan Manager</p> --}}
                         </div>
                     </div>
                 </div>
 
                 <!-- Single Team Member Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member text-center mb-100">
-                        <!-- Team Member Thumb -->
-                        <div class="team-member-thumb">
-                            <img src="img/bg-img/team4.png" alt="">
-                            <!-- Social Info -->
-                            <div class="team-member-social-info">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info mt-30">
-                            <h5>Pearl Kansas</h5>
-                            <p>Marketer</p>
-                        </div>
-                    </div>
-                </div>
+                
 
             </div>
         </div>
@@ -642,7 +538,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                                <a href="#"><img src="frontend/img/core-img/logo.png" alt=""></a>
                             </div>
                             <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
                             <div class="social-info">
@@ -688,7 +584,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="img/bg-img/4.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/4.jpg" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Cactus Flower</a>
@@ -699,7 +595,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="img/bg-img/5.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/5.jpg" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Tulip Flower</a>
@@ -717,9 +613,9 @@
                             </div>
 
                             <div class="contact-information">
-                                <p><span>Address:</span> 505 Silk Rd, New York</p>
-                                <p><span>Phone:</span> +1 234 122 122</p>
-                                <p><span>Email:</span> info.deercreative@gmail.com</p>
+                                <p><span>Address:</span> Magway, padauk street</p>
+                                <p><span>Phone:</span> 09-789726113</p>
+                                <p><span>Email:</span> myintthu32094@gmail.com</p>
                                 <p><span>Open hours:</span> Mon - Sun: 8 AM to 9 PM</p>
                                 <p><span>Happy hours:</span> Sat: 2 PM to 4 PM</p>
                             </div>

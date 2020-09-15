@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
+    <title>Fruit&Plant</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('frontend/img/core-img/favicon.ico')}}">
@@ -65,11 +65,13 @@
                                 </div>
                                 <!-- Cart -->
                                 <div class="cart">
-<<<<<<< HEAD
-                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"></span></span></a>
-=======
-                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
->>>>>>> 2bbcf020acf218a812d8e23833f742c00695b51f
+
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"></span></span></a>
+
+                                    {{-- <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a> --}}
+
+                                    
+
                                 </div>
                             </div>
                         </div>
@@ -86,7 +88,7 @@
                     <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                         <!-- Nav Brand -->
-                        <a href="index.html" class="nav-brand"><img src="{{asset('img/core-img/logo.png')}}" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="{{asset('frontend/img/core-img/logo.png')}}" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -112,24 +114,24 @@
                                             <li><a href="{{route('aboutpage')}}">About</a></li>
                                             <li><a href="shop.html">Shop</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
-                                                    <li><a href="{{route('shoppage')}}">Shop Details</a></li>
+                                                   {{--  <li><a href="{{route('shoppage')}}">Shop</a></li>
+                                                    <li><a href="{{route('shoppage')}}">Shop Details</a></li> --}}
                                                     <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
-                                                    <li><a href="{{route('checkoutpage')}}">Checkout</a></li>
+                                                    {{-- <li><a href="{{route('checkoutpage')}}">Checkout</a></li> --}}
                                                 </ul>
                                             </li>
                                             <li><a href="portfolio.html">Portfolio</a>
-                                                <ul class="dropdown">
+                                                {{-- <ul class="dropdown">
                                                     <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
                                                     <li><a href="{{route('portfoliopage')}}">Portfolio Details</a></li>
-                                                </ul>
+                                                </ul> --}}
                                             </li>
-                                            <li><a href="blog.html">Blog</a>
+                                           {{--  <li><a href="blog.html">Blog</a>
                                                 <ul class="dropdown">
                                                     <li><a href="{{route('blogpage')}}">Blog</a></li>
                                                     <li><a href="{{route('blogpage')}}">Blog Details</a></li>
                                                 </ul>
-                                            </li>
+                                            </li> --}}
                                             <li><a href="{{route('contactpage')}}">Contact</a></li>
                                         </ul>
                                     </li>
@@ -166,7 +168,7 @@
     <!-- ##### Breadcrumb Area Start ##### -->
     <div class="breadcrumb-area">
         <!-- Top Breadcrumb Area -->
-        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({{asset('img/bg-img/24.jpg')}});">
+        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({{asset('frontend/img/bg-img/24.jpg')}});">
             <h2>PORTFOLIO</h2>
         </div>
 
@@ -175,7 +177,7 @@
                 <div class="col-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('masterpage')}}"><i class="fa fa-home"></i> Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
                         </ol>
                     </nav>
@@ -219,7 +221,7 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('img/bg-img/16.jpg')}});"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/16.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
                         <a href="img/bg-img/16.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
@@ -234,7 +236,7 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-6 single_portfolio_item garden">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('img/bg-img/17.jpg')}});"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/17.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
                         <a href="img/bg-img/17.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 2">
@@ -249,10 +251,10 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('img/bg-img/19.jpg')}});"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/19.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/19.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 4">
+                        <a href="frontend/img/bg-img/19.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 4">
                             <div class="port-hover-text">
                                 <h3>Minimal Flower Store</h3>
                                 <h5>Office Plants</h5>
@@ -264,7 +266,7 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design office-design">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('img/bg-img/20.jpg')}});"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/20.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
                         <a href="img/bg-img/20.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 5">
@@ -279,10 +281,10 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('img/bg-img/21.jpg')}});"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url({{asset('frontend/img/bg-img/21.jpg')}});"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/21.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 6">
+                        <a href="frontend/img/bg-img/21.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 6">
                             <div class="port-hover-text">
                                 <h3>Minimal Flower Store</h3>
                                 <h5>Office Plants</h5>
@@ -458,7 +460,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="{{route('shoppage')}}"><img src="{{asset('img/bg-img/4.jpg')}}" alt=""></a>
+                                    <a href="{{route('shoppage')}}"><img src="{{asset('frontend/img/bg-img/4.jpg')}}" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Cactus Flower</a>
@@ -469,7 +471,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="{{asset('img/bg-img/5.jpg" alt=""')}}"></a>
+                                    <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/5.jpg')}}" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Tulip Flower</a>
@@ -487,8 +489,8 @@
                             </div>
 
                             <div class="contact-information">
-                                <p><span>Address:</span> 505 Silk Rd, New York</p>
-                                <p><span>Phone:</span> +1 234 122 122</p>
+                                <p><span>Address:</span> Magway,Padauk Street</p>
+                                <p><span>Phone:</span> 09-789726113</p>
                                 <p><span>Email:</span> info.deercreative@gmail.com</p>
                                 <p><span>Open hours:</span> Mon - Sun: 8 AM to 9 PM</p>
                                 <p><span>Happy hours:</span> Sat: 2 PM to 4 PM</p>

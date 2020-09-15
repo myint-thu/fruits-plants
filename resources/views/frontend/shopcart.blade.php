@@ -46,7 +46,9 @@
                         <p>Coupons can be applied in the cart prior to checkout. Add an eligible item from the booth of the seller that created the coupon code to your cart. Click the green "Apply code" button to add the coupon to your order. The order total will update to indicate the savings specific to the coupon code entered.</p>
                         <form action="#" method="post">
                             <input type="text" name="coupon-code" placeholder="Enter your coupon code">
+                             @role('Customer')
                             <button type="submit">APPLY COUPON</button>
+                               @endrole
                         </form>
                     </div>
                 </div>
@@ -74,7 +76,9 @@
                                     <input type="text" name="shipping-zip" id="shipping-zip" placeholder="Address">
                                     <input type="text" name="shipping-zip" id="shipping-zip" placeholder="Phone Number">
                                     <div class="checkout-btn">
-                            <a href="{{route('loginpage')}}" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a>
+                                   
+                            <a href="{{route('register')}}" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a>
+                          
                         </div>
                                 </form>
                             </div>
