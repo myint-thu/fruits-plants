@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 			getData();
+			getTotal();
 
   count();		
   function count(){
@@ -57,24 +58,20 @@ $(document).ready(function(){
 						
 						localStorage.setItem('G', JSON.stringify(G));
 				//alert(name);
-						getData();
-
-						
+						getData();		
 				
 				
 			});
-		// $.ajaxSetup({
-  //   			headers: {
-  //      						'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-  //  						 }
-		// 			});
+		 $.ajaxSetup({
+    			headers: {
+        			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+   				}
+		});
 		function getData(){
 				var myG = localStorage.getItem('G');
 				var data= $("#fruitplant_table");
 				var result = "";
 				var total=0;
-
-
 				if(myG!= null){
 					G = JSON.parse(myG);
 					
@@ -101,7 +98,44 @@ $(document).ready(function(){
 					result += 'Cart is Empty';
 				}
 				data.html(result);
-			}
+		}
+
+
+
+
+		function getTotal(){
+				var myG = localStorage.getItem('G');
+				var data= $("#getTotal");
+				var result = "";
+				var total=0;
+				G = JSON.parse(myG);
+				
+				$.each(G,function (i,v){
+					 
+					subtotal=v.price*v.qty;
+					total+=subtotal;
+				})
+
+				$.ajaxSetup({
+			    headers: {
+			        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				    }
+				});
+				$.post('/order',{name:total},function(response){
+					console.log(response);
+				})
+
+				
+		}
+
+
+
+
+
+
+
+
+
 			$('#fruitplant_table').on('click','.removebtn',function(){
 				let index=$(this).data('id');
 				var myG=localStorage.getItem('G');
@@ -129,12 +163,34 @@ $(document).ready(function(){
 			})
 
 
+			// start order 
+			$('.checkoutbtn').click(function(){
+				var notes = $('.notes').val();
+   				if (notes == '') {
+     				alert('Please fill request message!');
+    			}else{
+      				// var total = $('.total').val();
+      				var shopString = localStorage.getItem("G"); // string
+      				if (shopString) {
+        				// var shopArray = JSON.parse(shopString);
+			         	$.ajaxSetup({
+			    			headers: {
+			        			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			   				}
+					 	});
+	       				$.post('/orders',{myG:shopString,notes:notes},function(response){
+	       					console.log(response);
+		         			if (response) {
+					            getData();
+		          			}
 
-			
+			       		})
+			      	}
+			   	}	
+   			});
 
 
-
-
+			// end order
 
 
 			// start buy now

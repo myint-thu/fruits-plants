@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
+    <title>Fruits And Plants Management System</title>
 
     <!-- Favicon -->
     <link rel="icon" href="frontend/img/core-img/favicon.ico">
@@ -39,8 +39,14 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +09791552059</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: myintthu15@ucsmgy.edu.mm</span><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: shinehtetwai@ucsmgy.edu.mm</span>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-791552059</span><br>
+                                <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-789726113</span><br>
+                                <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-754614738</span>
+                                </a>
                             </div>
 
                             <!-- Top Header Content -->
@@ -50,12 +56,12 @@
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">USA</a>
-                                            <a class="dropdown-item" href="#">UK</a>
-                                            <a class="dropdown-item" href="#">Bangla</a>
+                                            <a class="dropdown-item" href="#">MYANMAR</a>
+                                            <a class="dropdown-item" href="#">ENGLISH</a>
+                                            {{-- <a class="dropdown-item" href="#">Bangla</a>
                                             <a class="dropdown-item" href="#">Hindi</a>
                                             <a class="dropdown-item" href="#">Spanish</a>
-                                            <a class="dropdown-item" href="#">Latin</a>
+                                            <a class="dropdown-item" href="#">Latin</a> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -82,7 +88,7 @@
                     <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                         <!-- Nav Brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="frontend/img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -171,7 +177,7 @@
                 <div class="col-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('masterpage')}}"><i class="fa fa-home"></i> Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">About</li>
                         </ol>
                     </nav>
@@ -247,7 +253,7 @@
                             <!-- Single Benefits Area -->
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
-                                    <img src="img/core-img/b1.png" alt="">
+                                    <img src="frontend/img/core-img/b1.png" alt="">
                                     <h5>Quality Products</h5>
                                     <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
                                 </div>
@@ -256,7 +262,7 @@
                             <!-- Single Benefits Area -->
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
-                                    <img src="img/core-img/b2.png" alt="">
+                                    <img src="frontend/img/core-img/b2.png" alt="">
                                     <h5>Perfect Service</h5>
                                     <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
                                 </div>
@@ -265,7 +271,7 @@
                             <!-- Single Benefits Area -->
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
-                                    <img src="img/core-img/b3.png" alt="">
+                                    <img src="frontend/img/core-img/b3.png" alt="">
                                     <h5>100% Natural</h5>
                                     <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
                                 </div>
@@ -274,7 +280,7 @@
                             <!-- Single Benefits Area -->
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
-                                    <img src="img/core-img/b4.png" alt="">
+                                    <img src="frontend/img/core-img/b4.png" alt="">
                                     <h5>Environmentally friendly</h5>
                                     <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
                                 </div>
@@ -316,7 +322,7 @@
                         <div class="single-service-area d-flex align-items-center">
                             <!-- Icon -->
                             <div class="service-icon mr-30">
-                                <img src="img/core-img/s1.png" alt="">
+                                <img src="frontend/img/core-img/s1.png" alt="">
                             </div>
                             <!-- Content -->
                             <div class="service-content">
@@ -329,7 +335,7 @@
                         <div class="single-service-area d-flex align-items-center">
                             <!-- Icon -->
                             <div class="service-icon mr-30">
-                                <img src="img/core-img/s2.png" alt="">
+                                <img src="frontend/img/core-img/s2.png" alt="">
                             </div>
                             <!-- Content -->
                             <div class="service-content">
@@ -342,7 +348,7 @@
                         <div class="single-service-area d-flex align-items-center">
                             <!-- Icon -->
                             <div class="service-icon mr-30">
-                                <img src="img/core-img/s3.png" alt="">
+                                <img src="frontend/img/core-img/s3.png" alt="">
                             </div>
                             <!-- Content -->
                             <div class="service-content">
@@ -356,7 +362,7 @@
 
                 <div class="col-12 col-lg-6">
                     <div class="alazea-video-area bg-overlay mb-100">
-                        <img src="img/bg-img/23.jpg" alt="">
+                        <img src="frontend/img/bg-img/23.jpg" alt="">
                         <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-icon">
                             <i class="fa fa-play" aria-hidden="true"></i>
                         </a>
@@ -379,7 +385,7 @@
                             <div class="row align-items-center">
                                 <div class="col-12 col-md-6">
                                     <div class="testimonial-thumb">
-                                        <img src="img/bg-img/13.jpg" alt="">
+                                        <img src="frontend/img/bg-img/13.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
@@ -404,7 +410,7 @@
                             <div class="row align-items-center">
                                 <div class="col-12 col-md-6">
                                     <div class="testimonial-thumb">
-                                        <img src="img/bg-img/14.jpg" alt="">
+                                        <img src="frontend/img/bg-img/14.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
@@ -429,7 +435,7 @@
                             <div class="row align-items-center">
                                 <div class="col-12 col-md-6">
                                     <div class="testimonial-thumb">
-                                        <img src="img/bg-img/15.jpg" alt="">
+                                        <img src="frontend/img/bg-img/15.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
@@ -465,7 +471,7 @@
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="single-cool-fact d-flex align-items-center justify-content-center mb-100">
                         <div class="cf-icon">
-                            <img src="img/core-img/cf1.png" alt="">
+                            <img src="frontend/img/core-img/cf1.png" alt="">
                         </div>
                         <div class="cf-content">
                             <h2><span class="counter">20</span></h2>
@@ -478,7 +484,7 @@
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="single-cool-fact d-flex align-items-center justify-content-center mb-100">
                         <div class="cf-icon">
-                            <img src="img/core-img/cf2.png" alt="">
+                            <img src="frontend/img/core-img/cf2.png" alt="">
                         </div>
                         <div class="cf-content">
                             <h2><span class="counter">70</span></h2>
@@ -491,7 +497,7 @@
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="single-cool-fact d-flex align-items-center justify-content-center mb-100">
                         <div class="cf-icon">
-                            <img src="img/core-img/cf3.png" alt="">
+                            <img src="frontend/img/core-img/cf3.png" alt="">
                         </div>
                         <div class="cf-content">
                             <h2><span class="counter">30</span>+</h2>
@@ -504,7 +510,7 @@
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="single-cool-fact d-flex align-items-center justify-content-center mb-100">
                         <div class="cf-icon">
-                            <img src="img/core-img/cf4.png" alt="">
+                            <img src="frontend/img/core-img/cf4.png" alt="">
                         </div>
                         <div class="cf-content">
                             <h2><span class="counter">80</span>K+</h2>
@@ -543,7 +549,7 @@
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
                         <div class="team-member-thumb">
-                            <img src="img/bg-img/team1.png" alt="">
+                            <img src="frontend/img/bg-img/team1.png" alt="">
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -565,7 +571,7 @@
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
                         <div class="team-member-thumb">
-                            <img src="img/bg-img/team2.png" alt="">
+                            <img src="frontend/img/bg-img/team2.png" alt="">
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -587,7 +593,7 @@
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
                         <div class="team-member-thumb">
-                            <img src="img/bg-img/team3.png" alt="">
+                            <img src="frontend/img/bg-img/team3.png" alt="">
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -609,7 +615,7 @@
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
                         <div class="team-member-thumb">
-                            <img src="img/bg-img/team4.png" alt="">
+                            <img src="frontend/img/bg-img/team4.png" alt="">
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -642,7 +648,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                                <a href="#"><img src="frontend/img/core-img/logo.png" alt=""></a>
                             </div>
                             <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
                             <div class="social-info">
@@ -688,7 +694,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="img/bg-img/4.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/4.jpg" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Cactus Flower</a>
@@ -699,7 +705,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="img/bg-img/5.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/5.jpg" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Tulip Flower</a>

@@ -21,6 +21,6 @@ class RoleTableSeeder extends Seeder
     	$tole2->name="Admin";
     	$role2-save();
 
-        //
+        
     }
 }

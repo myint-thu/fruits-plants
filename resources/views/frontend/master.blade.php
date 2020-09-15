@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
+    <title>Fruits And Plants Management System</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('frontend/img/core-img/favicon.ico')}}">
@@ -39,8 +41,15 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +1 234 122 122</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i><span>Email: myintthu15@ucsmgy.edu.mm</span><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i><span>Email: shinehtetwai@ucsmgy.edu.mm</span>
+
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-791552059</span><br>
+                                    <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-789726113</span><br>
+                                    <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-754614738</span>
+                                </a>
                             </div>
 
                             <!-- Top Header Content -->
@@ -50,12 +59,12 @@
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">USA</a>
-                                            <a class="dropdown-item" href="#">UK</a>
-                                            <a class="dropdown-item" href="#">Bangla</a>
+                                            <a class="dropdown-item" href="#">MYANMAR</a>
+                                            <a class="dropdown-item" href="#">ENGLISH</a>
+                                            {{-- <a class="dropdown-item" href="#">Bangla</a>
                                             <a class="dropdown-item" href="#">Hindi</a>
                                             <a class="dropdown-item" href="#">Spanish</a>
-                                            <a class="dropdown-item" href="#">Latin</a>
+                                            <a class="dropdown-item" href="#">Latin</a> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -117,15 +126,15 @@
                                             <li><a href="{{route('portfoliopage')}}">Portfolio</a>
                                                 <ul class="dropdown">
                                                     <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
-                                                    <li><a href="{{route('portfoliopage')}}">Portfolio Details</a></li>
+                                                    {{-- <li><a href="{{route('portfoliopage')}}">Portfolio Details</a></li> --}}
                                                 </ul>
                                             </li>
-                                            <li><a href="blog.html">Blog</a>
+                                            {{-- <li><a href="blog.html">Blog</a>
                                                 <ul class="dropdown">
                                                     <li><a href="{{route('blogpage')}}">Blog</a></li>
                                                     <li><a href="{{route('blogpage')}}">Blog Details</a></li>
                                                 </ul>
-                                            </li>
+                                            </li> --}}
                                             <li><a href="{{route('contactpage')}}">Contact</a></li>
                                         </ul>
                                     </li>
@@ -176,7 +185,7 @@
                                 <p>OK.</p>
                                 <div class="welcome-btn-group">
                                     <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
-                                    <a href="#" class="btn alazea-btn active">CONTACT US</a>
+                                    <a href="{{route('contactpage')}}" class="btn alazea-btn active">CONTACT US</a>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +206,7 @@
                                 <p></p>
                                 <div class="welcome-btn-group">
                                     <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
-                                    <a href="#" class="btn alazea-btn active">CONTACT US</a>
+                                    <a href="{{route('contactpage')}}" class="btn alazea-btn active">CONTACT US</a>
                                 </div>
                             </div>
                         </div>
@@ -356,93 +365,7 @@
     </section>
     <!-- ##### Portfolio Area End ##### -->
 
- {{--    <!-- ##### Testimonial Area Start ##### -->
-    <section class="testimonial-area section-padding-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="testimonials-slides owl-carousel">
-
-                        <!-- Single Testimonial Slide -->
-                        <div class="single-testimonial-slide">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-thumb">
-                                        <img src="{{asset('frontend/img/bg-img/13.jpg')}}" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-content">
-                                        <! Section Heading >
-                                        <div class="section-heading">
-                                            <h2>TESTIMONIAL</h2>
-                                            <p>Some kind words from clients about Alazea</p>
-                                        </div>
-                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
-                                        <div class="testimonial-author-info">
-                                            <h6>Mr. Nick Jonas</h6>
-                                            <p>CEO of NAVATECH</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Testimonial Slide -->
-                        <div class="single-testimonial-slide">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-thumb">
-                                        <img src="{{asset('frontend/img/bg-img/14.jpg')}}" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-content">
-                                        <!-- Section Heading -->
-                                        <div class="section-heading">
-                                            <h2>TESTIMONIAL</h2>
-                                            <p>Some kind words from clients about Alazea</p>
-                                        </div>
-                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
-                                        <div class="testimonial-author-info">
-                                            <h6>Mr. Nazrul Islam</h6>
-                                            <p>CEO of NAVATECH</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Testimonial Slide -->
-                        <div class="single-testimonial-slide">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-thumb">
-                                        <img src="{{asset('frontend/img/bg-img/15.jpg')}}" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-content">
-                                        <!-- Section Heading -->
-                                        <div class="section-heading">
-                                            <h2>TESTIMONIAL</h2>
-                                            <p>Some kind words from clients about Alazea</p>
-                                        </div>
-                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
-                                        <div class="testimonial-author-info">
-                                            <h6>Mr. Jonas Nick</h6>
-                                            <p>CEO of NAVATECH</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
+ 
     <!-- ##### Testimonial Area End ##### -->
 
     <!-- ##### Product Area Start ##### -->
@@ -470,11 +393,11 @@
                             <div class="product-tag">
                                 <a href="#">Hot</a>
                             </div>
-                            <div class="product-meta d-flex">
+                            {{-- <div class="product-meta d-flex">
                                 <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                 <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
                                 <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                            </div>
+                            </div> --}}
                         </div>
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
@@ -492,11 +415,11 @@
                         <!-- Product Image -->
                         <div class="product-img">
                             <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/10.jpg')}}" alt=""></a>
-                            <div class="product-meta d-flex">
+                            {{-- <div class="product-meta d-flex">
                                 <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                 <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
                                 <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                            </div>
+                            </div> --}}
                         </div>
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
@@ -514,11 +437,11 @@
                         <!-- Product Image -->
                         <div class="product-img">
                             <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/11.jpg')}}" alt=""></a>
-                            <div class="product-meta d-flex">
+                            {{-- <div class="product-meta d-flex">
                                 <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                 <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
                                 <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                            </div>
+                            </div> --}}
                         </div>
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
@@ -540,11 +463,11 @@
                             <div class="product-tag sale-tag">
                                 <a href="#">Hot</a>
                             </div>
-                            <div class="product-meta d-flex">
+                            {{-- <div class="product-meta d-flex">
                                 <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                 <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
                                 <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                            </div>
+                            </div> --}}
                         </div>
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
@@ -716,7 +639,7 @@
                 <div class="col-12 col-lg-6">
                     <!-- Google Maps -->
                     <div class="map-area mb-100">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22236.40558254599!2d-118.25292394686001!3d34.057682914027104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z4Kay4Ka4IOCmj-CmnuCnjeCmnOCnh-CmsuCnh-CmuCwg4KaV4KeN4Kav4Ka-4Kay4Ka_4Kar4KeL4Kaw4KeN4Kao4Ka_4Kav4Ka84Ka-LCDgpq7gpr7gprDgp43gppXgpr_gpqgg4Kav4KeB4KaV4KeN4Kak4Kaw4Ka-4Ka34KeN4Kaf4KeN4Kaw!5e0!3m2!1sbn!2sbd!4v1532328708137" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38340.639363397575!2d94.9113554188397!3d20.153535804201624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30b7d1a2fdd47897%3A0xa4a346b2ae5f34ee!2z4YCZ4YCA4YC94YCx4YC4!5e0!3m2!1smy!2smm!4v1600152568451!5m2!1smy!2smm" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -735,7 +658,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="#"><img src="frontedend/img/core-img/logo.png" alt=""></a>
+                                <a href="#"><img src="frontend/img/core-img/logo.png" alt=""></a>
                             </div>
                             <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
                             <div class="social-info">
@@ -781,7 +704,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="frontedend/img/bg-img/4.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/4.jpg" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Cactus Flower</a>
@@ -792,7 +715,7 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="frontedend/img/bg-img/5.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/5.jpg" alt=""></a>
                                 </div>
                                 <div class="product-info">
                                     <a href="shop-details.html">Tulip Flower</a>
@@ -861,7 +784,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="{{asset('frontend/js/jquery/jquery-2.2.4.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery/jquery-3.5.1.min.js')}}"></script>
     <!-- Popper js -->
     <script src="{{asset('frontend/js/bootstrap/popper.min.js')}}"></script>
     <!-- Bootstrap js -->
