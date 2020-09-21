@@ -15,22 +15,7 @@
                                 </tr>
                             </thead>
                             <tbody id="fruitplant_table">
-                                {{-- <tr>
-                                    <td class="cart_product_img">
-                                        <a href="#"><img src="img/bg-img/34.jpg" alt="Product"></a>
-                                        <h5>Recuerdos Plant</h5>
-                                    </td>
-                                    <td class="qty">
-                                        <div class="quantity">
-                                            <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                            <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="1">
-                                            <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                        </div>
-                                    </td>
-                                    <td class="price"><span>$9.99</span></td>
-                                    <td class="total_price"><span>$9.99</span></td>
-                                    <td class="action"><a href="#"><i class="icon_close"></i></a></td>
-                                </tr> --}}
+                                
                             </tbody>
                         </table>
                     </div>
@@ -45,7 +30,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="coupon-discount mt-70">
                         <h5>COUPON DISCOUNT</h5>
-                        <p>Coupons can be applied in the cart prior to checkout. Add an eligible item from the booth of the seller that created the coupon code to your cart. Click the green "Apply code" button to add the coupon to your order. The order total will update to indicate the savings specific to the coupon code entered.</p>
+                        <p>Coupons can be applied in the cart prior to checkout. Add an eligible item from the booth of the seller that created the coupon code to your cart. Click the green "Apply code" button to add the coupon to your order. Cupon will enter your cart.</p>
                         <form action="#" method="post">
                             <input type="text" name="coupon-code" placeholder="Enter your coupon code">
                              @role('Customer')
@@ -78,11 +63,11 @@
                                     <input type="text" name="shipping-zip" id="shipping-zip" placeholder="Address" class="address">
                                     <input type="text" name="shipping-zip" id="shipping-zip" placeholder="Phone Number" class="phone">
                                     <div class="checkout-btn">
-<<<<<<< HEAD
+
                                    
-                            <a href="{{route('register')}}" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a>
+                            {{-- <a href="{{route('register')}}" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a> --}}
                           
-=======
+
 
                                     
                                        @role('Customer')
@@ -97,7 +82,7 @@
 
 
                             {{-- <input type="submit" value="PROCEED TO CHECKOUT" class="btn alazea-btn w-100 checkout"> --}}
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+
                         </div>
                                
                             </div>

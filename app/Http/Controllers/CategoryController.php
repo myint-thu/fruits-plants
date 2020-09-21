@@ -74,11 +74,11 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Category $category)
     {
         $categories = Category::all();
     
-        return view('backend.categories.edit',compact('categories'));
+        return view('backend.categories.edit',compact('category'));
     }
 
     /**
@@ -110,8 +110,9 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Category $category)
     {
-        //
+         $category->delete();
+        return redirect()->route('categories.index');
     }
 }

@@ -23,7 +23,7 @@
         			<th>Price</th>
                     {{-- <th>Description</th> --}}
                     <th>Technology</th>
-                    <th>Action</th>
+                    <th style="width: 180px;">Action</th>
 
         		</tr>
         	</thead>
@@ -34,10 +34,16 @@
         		<tr>
         			<td>{{$i++}}</td>
         			<td>{{$item->name}}</td>
-        			<td>{{$item->price}} MMK</td>
+        			<td>{{$item->price}} Ks</td>
                     <td>{{$item->technology}}</td>
-        			<td><a href="#" class="btn btn-primary">Detail</a>
-        				<a href="#" class="btn btn-danger">Delete</a>
+        			<td>
+                        <form method="post" action="{{route('items.destroy',$item->id)}}" onsubmit="return confirm('Are you sure you want to delete?')" class="d-inline-block">
+                          @csrf
+                          @method('DELETE')  
+                          {{-- <a href="#" class="btn btn-danger">Delete</a> --}}
+                          <input type="submit" class="btn btn-danger" value="Delete">
+                        </form>
+        				
         				<a href="{{route('items.edit',$item->id)}}" class="btn btn-info">Edit</a>
         			</td>
 

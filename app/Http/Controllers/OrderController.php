@@ -1,15 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-<<<<<<< HEAD
 
-use Illuminate\Http\Request;
-=======
+
+
+
 use Carbon\Carbon;
 use App\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+
 
 class OrderController extends Controller
 {
@@ -18,29 +18,22 @@ class OrderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-<<<<<<< HEAD
-    public function index()
-    {
-        //
-=======
-    public function __construct($value='')
-    {
-        $this->middleware('role:Admin')->only('index','show');
-        $this->middleware('role:Customer')->only('store');
-    }
-    public function index()
-    {
-        $date1 = $request->sdate;
-        $date2 = $request->edate;
 
-        if ($request->sdate && $request->edate) {
-            $orders = Order::whereBetween('orderdate', [new Carbon($date1), new Carbon($date2)])->where('status',0)->get();
-        }else{
-            $orders = Order::all();
-        }
+    
+        //
+
+    // public function __construct($value='')
+    // {
+    //     $this->middleware('role:Admin')->only('index','show');
+    //     $this->middleware('role:Customer')->only('store');
+    // }
+    public function index()
+    {
+        
+        $orders = Order::all();
 
         return view('backend.orders.index',compact('orders'));
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+
     }
 
     /**
@@ -61,33 +54,35 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-<<<<<<< HEAD
-        //
-=======
+
+        
+
         // return "store";
-         $cartArr = json_decode($request->G); // arr
+         $cartArr = json_decode($request->shop_data); // arr
         // $cartArr = $myArr->product_list; // if use array in localstorage
 
         $total = 0;
-        // foreach ($cartArr as $row) {
-        //     $total+=($row->price * $row->qty);
-        // }
+         foreach ($cartArr as $row) {
+             $total+=($row->price * $row->qty);
+         }
 
         $order = new Order;
         $order->voucherno = uniqid(); // 8880598734
         $order->orderdate = date('Y-m-d');
-        $order->user_id = Auth::id(); // auth id (1 => users table)
+
+        $order->user_id = Auth::id(); 
+        $order->total = $total;// auth id (1 => users table)
         $order->note = $request->notes;
         $order->save(); // only saved into order table
 
         // save into order_detail
-        // foreach ($cartArr as $row) {
-        //     $order->items()->attach($row->id,['qty'=>$row->qty]);
-        // }
+         foreach ($cartArr as $row) {
+             $order->items()->attach($row->id,['qty'=>$row->qty]);
+         }
 
         return 'Successful!';
 
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+
     }
 
     /**
@@ -98,7 +93,8 @@ class OrderController extends Controller
      */
     public function show($id)
     {
-        //
+        $order = Order::find($id);
+        return view('backend.orders.show',compact('order'));
     }
 
     /**
@@ -135,3 +131,4 @@ class OrderController extends Controller
         //
     }
 }
+

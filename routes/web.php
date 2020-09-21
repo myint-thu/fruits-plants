@@ -19,10 +19,9 @@ Route::get('/', function () {
 });
 
 
-Route::resource('categories','CategoryController');
-Route::resource('items','ItemController');
+// Route::resource('categories','CategoryController');
+// Route::resource('items','ItemController');
 
-Route::resource('categories','CategoryController');
 Route::resource('items','ItemController');
 Route::get('dashboard','BackendController@dashboardfun')->name('dashboardpage');
 
@@ -34,6 +33,7 @@ Route::get('shop','PageController@shopfun')->name('shoppage');
 Route::get('portfilio','PageController@portfoliofun')->name('portfoliopage');
 Route::get('contact','PageController@contactfun')->name('contactpage');
 Route::get('cart','PageController@cartfun')->name('cartpage');
+Route::get('shopdetail/{id}','PageController@shopdetailfun')->name('shopdetailpage');
 // testing
 	// Route::get('blog','PageController@blogfun')->name('blogpage');
 // end testing
@@ -48,11 +48,15 @@ Route::get('single','PageController@singlefun')->name('singlepage');
 Route::get('registerpage','PageController@registerfun')->name('registerpage');
 // start testing
 	Route::post('orders','OrderController@store')->name('orders');
+	Route::get('orders','OrderController@index');
+    Route::get('orders/show/{id}','OrderController@show');
+
+	// Route::post('orders','PageController@orderpage')->name('orders');
 // end testing
 
 //testing
 
-// Route::get('login','PageController@loginfun')->name('loginpage');
+	
 
 //endtesting
 
@@ -62,14 +66,13 @@ Route::get('registerpage','PageController@registerfun')->name('registerpage');
 Route::middleware('role:Admin')->group(function (){
 Route::get('dashboard','BackendController@dashboardfun')->name('dashboardpage');
 Route::resource('items','ItemController');
+Route::resource('categories','CategoryController');
 
 });
 
 
-<<<<<<< HEAD
-//=======
-=======
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+
+
 
 Route::get('/testing', function ($value=''){
 	return "That is our project testing";

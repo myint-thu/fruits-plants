@@ -6,17 +6,16 @@
     <meta name="description" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-<<<<<<< HEAD
-    <title>Fruit&Plant</title>
-=======
-    <title>Fruits And Plants Management System</title>
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+
+    <title>Fruit&Plant Management System</title>
+
+    
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('frontend/img/core-img/favicon.ico')}}">
@@ -46,20 +45,12 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-<<<<<<< HEAD
+
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-791552059</span></a>
-=======
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span><br>
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i><span>Email: myintthu15@ucsmgy.edu.mm</span><br>
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i><span>Email: shinehtetwai@ucsmgy.edu.mm</span>
 
-                                </a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-791552059</span><br>
-                                    <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-789726113</span><br>
-                                    <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-754614738</span>
-                                </a>
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+                                
+                                
                             </div>
 
                             <!-- Top Header Content -->
@@ -69,21 +60,16 @@
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-<<<<<<< HEAD
-                                            <a class="dropdown-item" href="{{url('locale/en')}}">USA</a>
-                                            <a class="dropdown-item" href="{{url('locale/y')}}">UK</a>
-                                            <a class="dropdown-item" href="{{url('locale/my')}}">Myanmar</a>
-                                            <a class="dropdown-item" href="{{url('locale/en')}}">Hindi</a>
-                                            <a class="dropdown-item" href="{{url('locale/sp')}}">Spanish</a>
-                                            <a class="dropdown-item" href="#">Latin</a>
-=======
+
+                                           
+                                            
+
                                             <a class="dropdown-item" href="#">MYANMAR</a>
                                             <a class="dropdown-item" href="#">ENGLISH</a>
-                                            {{-- <a class="dropdown-item" href="#">Bangla</a>
-                                            <a class="dropdown-item" href="#">Hindi</a>
-                                            <a class="dropdown-item" href="#">Spanish</a>
-                                            <a class="dropdown-item" href="#">Latin</a> --}}
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+                                             <a class="dropdown-item" href="#">USA</a>
+                                            <a class="dropdown-item" href="#">UK</a>
+                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -92,9 +78,7 @@
                                     <a href="{{route('registerpage')}}"><i class="fa fa-user" aria-hidden="true"></i> <span>Login</span></a>
                                 </div>
                                 <!-- Cart -->
-                                <div class="cart">
-                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"><small class="cartNoti"></small></span></span></a>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -130,44 +114,18 @@
                                 <ul>
                                     <li><a href="{{route('masterpage')}}">Home</a></li>
                                     <li><a href="{{route('aboutpage')}}">About</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="{{route('masterpage')}}">Home</a></li>
-                                            <li><a href="{{route('aboutpage')}}">About</a></li>
-                                            <li><a href="{{route('shoppage')}}">Shop</a>
-                                                <ul class="dropdown">
-                                                   {{--  <li><a href="{{route('shoppage')}}">Shop</a></li> --}}
-                                                    {{-- <li><a href="shop-details.html">Shop Details</a></li> --}}
-                                                    <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
-                                                  {{--   <li><a href="{{route('checkoutpage')}}">Checkout</a></li> --}}
-                                                </ul>
-                                            </li>
-                                            <li><a href="{{route('portfoliopage')}}">Portfolio</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
-<<<<<<< HEAD
-                                                   {{--  <li><a href="{{route('portfoliopage')}}">Portfolio Details</a></li> --}}
-                                                </ul>
-                                            </li>
-                                           {{--  <li><a href="blog.html">Blog</a>
-=======
-                                                    {{-- <li><a href="{{route('portfoliopage')}}">Portfolio Details</a></li> --}}
-                                                </ul>
-                                            </li>
-                                            {{-- <li><a href="blog.html">Blog</a>
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
-                                                <ul class="dropdown">
-                                                    <li><a href="{{route('blogpage')}}">Blog</a></li>
-                                                    <li><a href="{{route('blogpage')}}">Blog Details</a></li>
-                                                </ul>
-                                            </li> --}}
+                                
+                                            
+                                            <li><a href="{{route('shoppage')}}">Shop</a></li>
+                                            <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
                                             <li><a href="{{route('contactpage')}}">Contact</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
-                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
-                                    <li><a href="{{route('contactpage')}}">Contact</a></li>
+                                    
                                 </ul>
+                                 <div class="cart">
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true" style="color: white"></i> <span style="color: white">Cart <span class="cart-quantity"><small class="cartNoti"></small></span></span></a>
+                                </div>
 
                                 <!-- Search Icon -->
                                 <div id="searchIcon">
@@ -210,11 +168,9 @@
                                 <h2>Plants exist in the weather and light rays that surround them</h2>
                                 <p>OK.</p>
                                 <div class="welcome-btn-group">
-<<<<<<< HEAD
-                                    {{-- <a href="#" class="btn alazea-btn mr-30">GET STARTED</a> --}}
-=======
-                                    <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+
+                                    
+
                                     <a href="{{route('contactpage')}}" class="btn alazea-btn active">CONTACT US</a>
                                 </div>
                             </div>
@@ -226,7 +182,7 @@
             <!-- Single Hero Post -->
             <div class="single-hero-post bg-overlay">
                 <!-- Post Image -->
-                <div class="slide-img bg-img" style="background-image: url({{asset('frontend/img/bg-img/2.jpg')}});"></div>
+                <div class="slide-img bg-img" style="background-image: url({{asset('frontend/img/bg-img/17.jpg')}});"></div>
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -235,11 +191,11 @@
                                 <h2>Plants exist in the weather and light rays that surround them</h2>
                                 <p></p>
                                 <div class="welcome-btn-group">
-<<<<<<< HEAD
+
                                     {{-- <a href="#" class="btn alazea-btn mr-30">GET STARTED</a> --}}
-=======
-                                    <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+
+                                    
+
                                     <a href="{{route('contactpage')}}" class="btn alazea-btn active">CONTACT US</a>
                                 </div>
                             </div>
@@ -422,7 +378,7 @@
                     <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="100ms">
                         <!-- Product Image -->
                         <div class="product-img">
-                            <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/9.jpg')}}" alt=""></a>
+                            <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/ja5.jpeg')}}" style="width: 200px;height: 200px;" alt=""></a>
                             <!-- Product Tag -->
                             <div class="product-tag">
                                 <a href="#">Hot</a>
@@ -436,9 +392,9 @@
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
                             <a href="shop-details.html">
-                                <p>Cactus Flower</p>
+                                <p>Jasmine Flower</p>
                             </a>
-                            <h6>$10.99</h6>
+                            <h6>4000 Ks</h6>
                         </div>
                     </div>
                 </div>
@@ -448,7 +404,7 @@
                     <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="200ms">
                         <!-- Product Image -->
                         <div class="product-img">
-                            <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/10.jpg')}}" alt=""></a>
+                            <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/og3.jpeg')}}" style="width: 200px;height: 200px;" alt=""></a>
                             {{-- <div class="product-meta d-flex">
                                 <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                 <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -458,9 +414,9 @@
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
                             <a href="shop-details.html">
-                                <p>Cactus Flower</p>
+                                <p>Orange Fruit</p>
                             </a>
-                            <h6>$10.99</h6>
+                            <h6>1500 Ks</h6>
                         </div>
                     </div>
                 </div>
@@ -470,7 +426,7 @@
                     <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Product Image -->
                         <div class="product-img">
-                            <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/11.jpg')}}" alt=""></a>
+                            <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/j1.jpeg')}}" style="width: 200px;height: 200px;" alt=""></a>
                             {{-- <div class="product-meta d-flex">
                                 <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                 <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -480,9 +436,9 @@
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
                             <a href="shop-details.html">
-                                <p>Cactus Flower</p>
+                                <p>June Flower</p>
                             </a>
-                            <h6>$10.99</h6>
+                            <h6>3000 Ks</h6>
                         </div>
                     </div>
                 </div>
@@ -492,30 +448,109 @@
                     <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="400ms">
                         <!-- Product Image -->
                         <div class="product-img">
-                            <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/12.jpg')}}" alt=""></a>
+                            <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/mango1.jpeg')}}" style="width: 200px;height: 200px;" alt=""></a>
                             <!-- Product Tag -->
                             <div class="product-tag sale-tag">
                                 <a href="#">Hot</a>
                             </div>
-                            {{-- <div class="product-meta d-flex">
-                                <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
-                                <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
-                                <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                            </div> --}}
+                            
                         </div>
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
                             <a href="shop-details.html">
-                                <p>Cactus Flower</p>
+                                <p>Mango Fruit</p>
                             </a>
-                            <h6>$10.99</h6>
+                            <h6>1000 Ks</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="400ms">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/k1.jpeg')}}" style="width: 200px;height: 200px;" alt=""></a>
+                            <!-- Product Tag -->
+                            <div class="product-tag sale-tag">
+                                <a href="#">Hot</a>
+                            </div>
+                            
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info mt-15 text-center">
+                            <a href="shop-details.html">
+                                <p>Kiss Me Flower</p>
+                            </a>
+                            <h6>2000 Ks</h6>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 text-center">
-                    <a href="#" class="btn alazea-btn">View All</a>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="400ms">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/AP2.jpeg')}}" style="width: 200px;height: 200px;" alt=""></a>
+                            <!-- Product Tag -->
+                            <div class="product-tag sale-tag">
+                                <a href="#">Hot</a>
+                            </div>
+                            
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info mt-15 text-center">
+                            <a href="shop-details.html">
+                                <p>Apple Fruit</p>
+                            </a>
+                            <h6>1500 Ks</h6>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="400ms">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/ro4.jpeg')}}" style="width: 200px;height: 200px;" alt=""></a>
+                            <!-- Product Tag -->
+                            <div class="product-tag sale-tag">
+                                <a href="#">Hot</a>
+                            </div>
+                            
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info mt-15 text-center">
+                            <a href="shop-details.html">
+                                <p>Rose Flower</p>
+                            </a>
+                            <h6>5000 Ks</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="400ms">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{{asset('frontend/img/bg-img/d3.jpeg')}}" style="width: 200px;height: 200px;" alt=""></a>
+                            <!-- Product Tag -->
+                            <div class="product-tag sale-tag">
+                                <a href="#">Hot</a>
+                            </div>
+                            
+                        </div>
+                        <!-- Product Info -->
+                        <div class="product-info mt-15 text-center">
+                            <a href="shop-details.html">
+                                <p>Dragon Fruit</p>
+                            </a>
+                            <h6>3000 Ks</h6>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- <div class="col-12 text-center">
+                    <a href="#" class="btn alazea-btn">View All</a>
+                </div> --}}
 
             </div>
         </div>
@@ -547,11 +582,11 @@
                             <a href="single-post.html" class="post-title">
                                 <h5>Garden designers across the country forecast ideas shaping the gardening world in 2018</h5>
                             </a>
-                            <div class="post-meta">
+                            {{-- <div class="post-meta">
                                 <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2018</a>
                                 <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Alan Jackson</a>
                             </div>
-                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p> --}}
                         </div>
                     </div>
                 </div>
@@ -566,11 +601,7 @@
                             <a href="single-post.html" class="post-title">
                                 <h5>2018 Midwest Tree and Shrub Conference: Resilient Plants for a Lasting Landscape</h5>
                             </a>
-                            <div class="post-meta">
-                                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2018</a>
-                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Christina Aguilera</a>
-                            </div>
-                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -585,11 +616,7 @@
                             <a href="single-post.html" class="post-title">
                                 <h5>The summer coming up, it’s time for both us and the flowers to soak up the sunshine</h5>
                             </a>
-                            <div class="post-meta">
-                                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 19 Jun 2018</a>
-                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Mason Jenkins</a>
-                            </div>
-                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -673,11 +700,10 @@
                 <div class="col-12 col-lg-6">
                     <!-- Google Maps -->
                     <div class="map-area mb-100">
-<<<<<<< HEAD
+
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59932.12069023256!2d94.9189613811491!3d20.14416028982741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30b7d1a2fdd47897%3A0xa4a346b2ae5f34ee!2sMagway!5e0!3m2!1sen!2smm!4v1600191245786!5m2!1sen!2smm" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-=======
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38340.639363397575!2d94.9113554188397!3d20.153535804201624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30b7d1a2fdd47897%3A0xa4a346b2ae5f34ee!2z4YCZ4YCA4YC94YCx4YC4!5e0!3m2!1smy!2smm!4v1600152568451!5m2!1smy!2smm" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+
+                        
                     </div>
                 </div>
             </div>
@@ -698,7 +724,7 @@
                             <div class="footer-logo mb-30">
                                 <a href="#"><img src="frontend/img/core-img/logo.png" alt=""></a>
                             </div>
-                            <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
+                            <p>Our system is useful to buy easily fresh fruits and plants.If you want to buy fruits and plants,you can contact our system.</p>
                             <div class="social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -742,22 +768,22 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="frontend/img/bg-img/4.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/ja5.jpeg" alt=""></a>
                                 </div>
                                 <div class="product-info">
-                                    <a href="shop-details.html">Cactus Flower</a>
-                                    <p>$10.99</p>
+                                    <a href="shop-details.html">Jasmine Flower</a>
+                                    <p>4000 Ks</p>
                                 </div>
                             </div>
 
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="frontend/img/bg-img/5.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/ro4.jpeg" alt=""></a>
                                 </div>
                                 <div class="product-info">
-                                    <a href="shop-details.html">Tulip Flower</a>
-                                    <p>$11.99</p>
+                                    <a href="shop-details.html">Rose Flower</a>
+                                    <p>5000 Ks</p>
                                 </div>
                             </div>
                         </div>
@@ -822,11 +848,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
-<<<<<<< HEAD
-    <script src="{{asset('frontend/js/jquery/jquery-3.3.1.min.js')}}"></script>
-=======
-    <script src="{{asset('frontend/js/jquery/jquery-3.5.1.min.js')}}"></script>
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+
+    
+
+    <script src="{{asset('frontend/js/jquery/jquery-2.2.4.min.js')}}"></script>
+
     <!-- Popper js -->
     <script src="{{asset('frontend/js/bootstrap/popper.min.js')}}"></script>
     <!-- Bootstrap js -->

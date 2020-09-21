@@ -9,11 +9,8 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-<<<<<<< HEAD
-    <title>Fruit&Plant Management System</title>
-=======
-    <title>Fruits And Plants Management System</title>
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+
+    <title>Fruits &Plants Management System</title>
 
     <!-- Favicon -->
     <link rel="icon" href="frontend/img/core-img/favicon.ico">
@@ -43,13 +40,9 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span><br>
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: myintthu15@ucsmgy.edu.mm</span><br>
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: shinehtetwai@ucsmgy.edu.mm</span>
-                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-791552059</span><br>
-                                <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-789726113</span><br>
-                                <i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-754614738</span>
+                                
                                 </a>
                             </div>
 
@@ -60,12 +53,10 @@
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">MYANMAR</a>
+                                             <a class="dropdown-item" href="#">MYANMAR</a>
                                             <a class="dropdown-item" href="#">ENGLISH</a>
-                                            {{-- <a class="dropdown-item" href="#">Bangla</a>
-                                            <a class="dropdown-item" href="#">Hindi</a>
-                                            <a class="dropdown-item" href="#">Spanish</a>
-                                            <a class="dropdown-item" href="#">Latin</a> --}}
+                                             <a class="dropdown-item" href="#">USA</a>
+                                            <a class="dropdown-item" href="#">UK</a>
                                         </div>
                                     </div>
                                 </div>
@@ -74,9 +65,7 @@
                                     <a href="{{route('registerpage')}}"><i class="fa fa-user" aria-hidden="true"></i> <span>Login</span></a>
                                 </div>
                                 <!-- Cart -->
-                                <div class="cart">
-                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"><small class="cartNoti"></small></span></span></a>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -112,37 +101,14 @@
                                 <ul>
                                     <li><a href="{{route('masterpage')}}">Home</a></li>
                                     <li><a href="{{route('aboutpage')}}">About</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="{{route('masterpage')}}">Home</a></li>
-                                            <li><a href="{{route('aboutpage')}}">About</a></li>
-                                            <li><a href="{{route('shoppage')}}">Shop</a>
-                                                <ul class="dropdown">
-                                                    {{-- <li><a href="{{route('shoppage')}}">Shop</a></li> --}}
-                                                    {{-- <li><a href="shop-details.html">Shop Details</a></li> --}}
-                                                    <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
-                                                  {{--   <li><a href="{{route('checkoutpage')}}">Checkout</a></li> --}}
-                                                </ul>
-                                            </li>
-                                            <li><a href="{{route('portfoliopage')}}">Portfolio</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
-                                                    {{-- <li><a href="single-portfolio.html">Portfolio Details</a></li> --}}
-                                                </ul>
-                                            </li>
-                                           {{--  <li><a href="{{route('blogpage')}}">Blog</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="{{route('blogpage')}}">Blog</a></li>
-                                                    <li><a href="{{route('blogpage')}}">Blog Details</a></li>
-                                                </ul>
-                                            </li> --}}
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </li>
+                                    
                                     <li><a href="{{route('shoppage')}}">Shop</a></li>
                                     <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
                                     <li><a href="{{route('contactpage')}}">Contact</a></li>
                                 </ul>
+                                 <div class="cart">
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true" style="color: white"></i> <span style="color: white">Cart <span class="cart-quantity"><small class="cartNoti"></small></span></span></a>
+                                </div>
 
                                 <!-- Search Icon -->
                                 <div id="searchIcon">
@@ -201,7 +167,7 @@
                         <h2>ABOUT US</h2>
                         <p>We are leading in the plants service fields.</p>
                     </div>
-                    <p>Quisque orci quam, vulputate non commodo finibus, molestie ac ante. Duis in sceleri quesem. Nulla sit amet varius nunc. Maecenas dui, tempeu ullam corper in.</p>
+                    <p>Plants are mainly multicellular organisms,predominantly photosynthetic eukaryotes of the kingdom Plantae.Historically,plants were treated as one of two Kingdoms including all living things.</p>
 
                     <!-- Progress Bar Content Area -->
                     <div class="alazea-progress-bar mb-50">
@@ -259,7 +225,7 @@
                                 <div class="single-benefits-area">
                                     <img src="frontend/img/core-img/b1.png" alt="">
                                     <h5>Quality Products</h5>
-                                    <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
+                                    <p>Many plants have colorful and so beautiful.Fruits contain important vitamins,minerals and plant chemicals.A diet high in fruit can help protect you against cancer.</p>
                                 </div>
                             </div>
 
@@ -268,7 +234,7 @@
                                 <div class="single-benefits-area">
                                     <img src="frontend/img/core-img/b2.png" alt="">
                                     <h5>Perfect Service</h5>
-                                    <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
+                                    <p>Produce for Better Health Foundation is a organization whose mission is to achieve increased daily consumption of fruits and plants.</p>
                                 </div>
                             </div>
 
@@ -277,7 +243,7 @@
                                 <div class="single-benefits-area">
                                     <img src="frontend/img/core-img/b3.png" alt="">
                                     <h5>100% Natural</h5>
-                                    <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
+                                    <p>Plants are the fabric which covers the soil. They hold the soil in place to reduce erosion and improve water quality. Plants provide our food, materials for shelter.</p>
                                 </div>
                             </div>
 
@@ -286,7 +252,7 @@
                                 <div class="single-benefits-area">
                                     <img src="frontend/img/core-img/b4.png" alt="">
                                     <h5>Environmentally friendly</h5>
-                                    <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
+                                    <p>Environment friendly processes, or environmental-friendly processes, are sustainability and marketing terms referring to goods and services.</p>
                                 </div>
                             </div>
                         </div>
@@ -331,7 +297,7 @@
                             <!-- Content -->
                             <div class="service-content">
                                 <h5>Plants Care</h5>
-                                <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat sodales.service its.</p>
+                                <p>Through the process of photosynthesis, plants transform solar radiation into the energy they need to grow and thrive. Plants that require full sun must grow outdoors and receive many hours of direct sunlight each day.</p>
                             </div>
                         </div>
 
@@ -344,7 +310,7 @@
                             <!-- Content -->
                             <div class="service-content">
                                 <h5>Pressure Washing</h5>
-                                <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat sodales.service its.</p>
+                                <p>A detergent-based pressure wash is more environmentally-friendly than bleach as it is typically diluted to a 10:1 water-to-detergent ratio. This makes it less harsh on plants. Caution is required when using detergent as well.</p>
                             </div>
                         </div>
 
@@ -366,8 +332,8 @@
 
                 <div class="col-12 col-lg-6">
                     <div class="alazea-video-area bg-overlay mb-100">
-                        <img src="frontend/img/bg-img/23.jpg" alt="">
-                        <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-icon">
+                        
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5vem9fyWuss" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <i class="fa fa-play" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -378,96 +344,10 @@
     <!-- ##### Service Area End ##### -->
 
     <!-- ##### Testimonial Area Start ##### -->
-<<<<<<< HEAD
+
     
-=======
-    <section class="testimonial-area section-padding-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="testimonials-slides owl-carousel">
 
-                        <!-- Single Testimonial Slide -->
-                        <div class="single-testimonial-slide">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-thumb">
-                                        <img src="frontend/img/bg-img/13.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-content">
-                                        <!-- Section Heading -->
-                                        <div class="section-heading">
-                                            <h2>TESTIMONIAL</h2>
-                                            <p>Some kind words from clients about Alazea</p>
-                                        </div>
-                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
-                                        <div class="testimonial-author-info">
-                                            <h6>Mr. Nick Jonas</h6>
-                                            <p>CEO of NAVATECH</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Single Testimonial Slide -->
-                        <div class="single-testimonial-slide">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-thumb">
-                                        <img src="frontend/img/bg-img/14.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-content">
-                                        <!-- Section Heading -->
-                                        <div class="section-heading">
-                                            <h2>TESTIMONIAL</h2>
-                                            <p>Some kind words from clients about Alazea</p>
-                                        </div>
-                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
-                                        <div class="testimonial-author-info">
-                                            <h6>Mr. Nazrul Islam</h6>
-                                            <p>CEO of NAVATECH</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Testimonial Slide -->
-                        <div class="single-testimonial-slide">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-thumb">
-                                        <img src="frontend/img/bg-img/15.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-content">
-                                        <!-- Section Heading -->
-                                        <div class="section-heading">
-                                            <h2>TESTIMONIAL</h2>
-                                            <p>Some kind words from clients about Alazea</p>
-                                        </div>
-                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
-                                        <div class="testimonial-author-info">
-                                            <h6>Mr. Jonas Nick</h6>
-                                            <p>CEO of NAVATECH</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
     <!-- ##### Testimonial Area End ##### -->
 
     <!-- ##### Cool Facts Area Start ##### -->
@@ -556,13 +436,12 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
-<<<<<<< HEAD
+
                         <div class="team-member-thumb img-fluid">
-                            <img src="frontend/img/bg-img/team1.jpg" alt="">
-=======
-                        <div class="team-member-thumb">
-                            <img src="frontend/img/bg-img/team1.png" alt="">
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+                            <img src="frontend/img/bg-img/team1.jpg" style="width: 200px;height:200px; " alt="">
+
+                    
+
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -583,13 +462,12 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
-<<<<<<< HEAD
+
                         <div class="team-member-thumb img-fluid">
-                            <img src="frontend/img/bg-img/team2.jpg" alt="">
-=======
-                        <div class="team-member-thumb">
-                            <img src="frontend/img/bg-img/team2.png" alt="">
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+                            <img src="frontend/img/bg-img/team2.jpg" style="width: 200px;height:200px; " alt="">
+
+                        
+
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -601,7 +479,7 @@
                         <!-- Team Member Info -->
                         <div class="team-member-info mt-30">
                             <h5>Soe Thu Win</h5>
-                           {{--  <p>Garden Designer</p> --}}
+                           
                         </div>
                     </div>
                 </div>
@@ -610,13 +488,12 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
-<<<<<<< HEAD
+
                         <div class="team-member-thumb img-fluid">
-                            <img src="frontend/img/bg-img/team3.jpg" alt="">
-=======
-                        <div class="team-member-thumb">
-                            <img src="frontend/img/bg-img/team3.png" alt="">
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+                            <img src="frontend/img/bg-img/team3.jpg" style="width: 200px;height:200px; " alt="">
+
+                        
+
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -634,30 +511,11 @@
                 </div>
 
                 <!-- Single Team Member Area -->
-<<<<<<< HEAD
+
                 
-=======
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member text-center mb-100">
-                        <!-- Team Member Thumb -->
-                        <div class="team-member-thumb">
-                            <img src="frontend/img/bg-img/team4.png" alt="">
-                            <!-- Social Info -->
-                            <div class="team-member-social-info">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info mt-30">
-                            <h5>Pearl Kansas</h5>
-                            <p>Marketer</p>
-                        </div>
-                    </div>
-                </div>
->>>>>>> f704d5441a9e27d6a9e79722f498d1f0ebfbc58f
+
+                
+
 
             </div>
         </div>
@@ -677,7 +535,7 @@
                             <div class="footer-logo mb-30">
                                 <a href="#"><img src="frontend/img/core-img/logo.png" alt=""></a>
                             </div>
-                            <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
+                            <p>Our system is useful to buy easily fresh fruits and plants.If you want to buy fruits and plants,you can contact our system.</p>
                             <div class="social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -721,22 +579,22 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="frontend/img/bg-img/4.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/ja5.jpeg" alt=""></a>
                                 </div>
                                 <div class="product-info">
-                                    <a href="shop-details.html">Cactus Flower</a>
-                                    <p>$10.99</p>
+                                    <a href="shop-details.html">Jasmine Flower</a>
+                                    <p>4000 Ks</p>
                                 </div>
                             </div>
 
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="frontend/img/bg-img/5.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/ro4.jpeg" alt=""></a>
                                 </div>
                                 <div class="product-info">
-                                    <a href="shop-details.html">Tulip Flower</a>
-                                    <p>$11.99</p>
+                                    <a href="shop-details.html">Rose Flower</a>
+                                    <p>5000 Ks</p>
                                 </div>
                             </div>
                         </div>
@@ -810,6 +668,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="frontend/js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="frontend/js/active.js"></script>
+    <script type="text/javascript" src="{{asset('fruitplant.js')}}"></script>
 </body>
 
 </html>

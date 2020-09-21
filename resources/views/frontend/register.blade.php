@@ -42,7 +42,7 @@
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: soethuwin@ucsmgy.edu.mm</span></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +1 234 122 122</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: 09-791552059</span></a>
                             </div>
 
                             <!-- Top Header Content -->
@@ -67,7 +67,7 @@
                                 </div>
                                 <!-- Cart -->
                                 <div class="cart">
-                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
+                                    <a href="{{route('cartpage')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity"><small class="cartNoti"></small></span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                     <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                         <!-- Nav Brand -->
-                        <a href="index.html" class="nav-brand"><img src="{{asset('frontend/img/core-img/logo.png" alt=""')}}"></a>
+                        <a href="index.html" class="nav-brand"><img src="{{asset('frontend/img/core-img/logo.png')}}" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -104,33 +104,7 @@
                                 <ul>
                                     <li><a href="{{route('masterpage')}}">Home</a></li>
                                     <li><a href="{{route('aboutpage')}}">About</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="{{route('masterpage')}}">Home</a></li>
-                                            <li><a href="{{route('aboutpage')}}">About</a></li>
-                                            <li><a href="shop.html">Shop</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="{{route('shoppage')}}">Shop</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="{{route('cartpage')}}">Shopping Cart</a></li>
-                                                    <li><a href="{{route('checkoutpage')}}">Checkout</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="portfolio.html">Portfolio</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
-                                                  {{--   <li><a href="{{route('portfoliodetail')}}">Portfolio Details</a></li> --}}
-                                                </ul>
-                                            </li>
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="{{route('blogpage')}}">Blog</a></li>
-                                                    <li><a href="{{route('singlepage')}}">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="{{route('contactpage')}}">Contact</a></li>
-                                        </ul>
-                                    </li>
+                                    
                                     <li><a href="{{route('shoppage')}}">Shop</a></li>
                                     <li><a href="{{route('portfoliopage')}}">Portfolio</a></li>
                                     <li><a href="{{route('contactpage')}}">Contact</a></li>
@@ -278,7 +252,7 @@
                             <div class="footer-logo mb-30">
                                 <a href="#"><img src="{{asset('frontend/img/core-img/logo.png')}}" alt=""></a>
                             </div>
-                            <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
+                            <p>Our system is useful to buy easily fresh fruits and plants.If you want to buy fruits and plants,you can contact our system.</p>
                             <div class="social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -322,22 +296,22 @@
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="img/bg-img/4.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/ja5.jpeg" alt=""></a>
                                 </div>
                                 <div class="product-info">
-                                    <a href="shop-details.html">Cactus Flower</a>
-                                    <p>$10.99</p>
+                                    <a href="shop-details.html">Jasmine Flower</a>
+                                    <p>4000 Ks</p>
                                 </div>
                             </div>
 
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="shop-details.html"><img src="img/bg-img/5.jpg" alt=""></a>
+                                    <a href="shop-details.html"><img src="frontend/img/bg-img/ro4.jpeg" alt=""></a>
                                 </div>
                                 <div class="product-info">
-                                    <a href="shop-details.html">Tulip Flower</a>
-                                    <p>$11.99</p>
+                                    <a href="shop-details.html">Rose Flower</a>
+                                    <p>5000 Ks</p>
                                 </div>
                             </div>
                         </div>
@@ -351,9 +325,9 @@
                             </div>
 
                             <div class="contact-information">
-                                <p><span>Address:</span> 505 Silk Rd, New York</p>
-                                <p><span>Phone:</span> +1 234 122 122</p>
-                                <p><span>Email:</span> info.deercreative@gmail.com</p>
+                                <p><span>Address:</span> Magway, Padauk Street</p>
+                                <p><span>Phone:</span> 09-789726113</p>
+                                <p><span>Email:</span> myintthu32094@gmail.com</p>
                                 <p><span>Open hours:</span> Mon - Sun: 8 AM to 9 PM</p>
                                 <p><span>Happy hours:</span> Sat: 2 PM to 4 PM</p>
                             </div>
@@ -402,7 +376,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="{{asset('frontend/js/jquery/jquery-3.5.1.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery/jquery-2.2.4.min.js')}}"></script>
     <!-- Popper js -->
     <script src="{{asset('frontend/js/bootstrap/popper.min.js')}}"></script>
     <!-- Bootstrap js -->

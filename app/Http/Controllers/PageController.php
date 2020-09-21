@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Item;
 use Illuminate\Http\Request;
 
+
 class PageController extends Controller
 {
         public function aboutfun($value='')
@@ -51,6 +52,22 @@ class PageController extends Controller
     {
         return view('frontend.register');
     }
+     public function  shopdetailfun($id)
+    {
+        $shop = Item::find($id);
+        return view('frontend.shopdetails',compact('shop'));
+    }
+
+
+
+
+ public function orderpage($value='')
+    {
+        return view('frontend.orders.index');
+    }
+
+
+   
 
     
 

@@ -18,23 +18,30 @@
         	<thead class="table-dark">
         		<tr>
         			<th>No</th>
-        			{{-- <th>Codeno</th> --}}
+        			
         			<th>Name</th>
-        			{{-- <th>Price</th> --}}
+        			
         			<th>Action</th>
         		</tr>
         	</thead>
         	<tbody>
         		@php $i=1; @endphp
-        		{{-- $items->array $item->no of object --}}
+        		
         		@foreach($categories as $category)  
         		<tr>
         			<td>{{$i++}}</td>
-        			{{-- <td>{{$item->codeno}}</td> --}}
+        			
         			<td>{{$category->name}}</td>
-        			{{-- <td>{{$item->price}} MMK</td> --}}
-        			<td><a href="#" class="btn btn-primary">Detail</a>
-        				<a href="#" class="btn btn-danger">Delete</a>
+        			
+        			<td>
+                        <form method="post" action="{{route('categories.destroy',$category->id)}}" onsubmit="return confirm('Are you sure you want to delete?')" class="d-inline-block">
+                          @csrf
+                          @method('DELETE')  
+                          
+                          <input type="submit" class="btn btn-danger" value="Delete">
+                        </form>
+
+        				
         				<a href="{{route('categories.edit',$category->id)}}" class="btn btn-info">Edit</a>
         			</td>
 

@@ -1,4 +1,4 @@
-{{-- @extends('backend') --}}
+@extends('backend')
 @section('content')
 		<div class="container-fluid">
 

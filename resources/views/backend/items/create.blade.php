@@ -23,13 +23,13 @@
          				<div class="form-group row">
          					<label for="inputPhoto" class="col-sm-2 col-form-label">Photo</label>
          					<div class="col-sm-10">
-         						<input type="file" class="form-control" id="inputEmail3" name="photo">
+         						<input type="file" class="form-control" id="inputphoto3" name="photo">
          					</div>
          				</div>
          				<div class="form-group row">
          					<label for="inputPrice" class="col-sm-2 col-form-label">Price</label>
          					<div class="col-sm-10">
-         						<input type="number" class="form-control" id="inputEmail3" name="price">
+         						<input type="number" class="form-control" id="inputprice3" name="price">
          					</div>
          				</div>
          				
